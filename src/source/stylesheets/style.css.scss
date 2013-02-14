@@ -14,7 +14,7 @@ body {
 	font-size: 1em;
 	font-weight: 300;
 	padding: 0 20px;
-	margin-bottom: 5em;
+	margin-bottom: 3em;
 }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 300; }
@@ -43,7 +43,7 @@ a:hover { color: #3299bb; }
 		line-height: 1.2em;
 		color: #3299bb;
 		&:before {
-			content: url(../images/envelope.png);
+			content: url(../images/envelope.svg);
 			display: block;
 			margin-bottom: 0.2em;
 		}
