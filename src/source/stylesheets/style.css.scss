@@ -27,6 +27,7 @@ a {
 	transition: color 0.5s;
 }
 a:hover { color: #3299bb; }
+a[href="#"] { color: #ddd; }
 .wrap {
 	max-width: 56.88em;
 	margin: 0 auto;
@@ -42,11 +43,6 @@ a:hover { color: #3299bb; }
 		font-size: 2.63em;
 		line-height: 1.2em;
 		color: #3299bb;
-		&:before {
-			content: url(../images/envelope.svg);
-			display: block;
-			margin-bottom: 0.2em;
-		}
 	}
 	p {
 		font-size: 1.13em;
@@ -60,7 +56,17 @@ a:hover { color: #3299bb; }
 		a { color: #a29f9f; text-decoration: underline; }
 	}
 }
-
+.index {
+	.header {
+		h1 {
+			&:before {
+				content: url(../images/envelope.svg);
+				display: block;
+				margin-bottom: 0.2em;
+			}
+		}
+	}
+}
 h2 {
 	margin: 0 0 0.4em 0;
 	padding-bottom: 0.4em;
@@ -88,8 +94,61 @@ ul {
 	}
 }
 @media only screen and (min-width: 37.5em) {
-	section { width: 49.5%; }
+	.index section { width: 49.5%; }
 }
 @media only screen and (min-width: 62.5em) {
-	section { width: 33%; }
+	.index section { width: 33%; }
+}
+
+
+/* Patterns */
+.demo { color: #3299bb; font-weight: bold; }
+.pattern_image {
+	vertical-align: top;
+	.smartphone { width: 13%; }
+	.tablet { width: 25%; }
+	.desktop { width: 39.0625%; }
+}
+.pattern_support {
+	table {
+		width: 100%;
+		tr:hover td { background: #e6e9eb; color: #111; }
+		th { vertical-align: bottom; }
+		td { vertical-align: top; }
+		th, td {
+			position: relative;
+			padding: 1em 0.5em;
+			text-align: left;
+			border-bottom: 1px solid #e6e9eb;
+			&:first-child { padding-right: 2em; }
+			&:last-child { text-align: right; }
+		}
+		.support_level {
+				padding-right: 2.75em;
+				&:after {
+					display: block;
+					position: absolute;
+					top: 1em;
+					right: 0.5em;
+					width: 1.4em;
+					height: 1.4em;
+					border-radius: 1em;
+					text-align: center;
+					font-weight: bold;
+					color: #fff;
+				}
+		}
+		.support_level.full:after {
+			content: '√';
+			background: #7ebd26;
+		}
+		.support_level.working:after {
+			content: '—';
+			background: #72d0eb;
+		}
+		.support_level.none:after {
+			content: 'x';
+			background: #f01c00;
+		}
+	}
 }
