@@ -27,7 +27,7 @@
 # with_layout :admin do
 #   page "/admin/*"
 # end
-
+page "/patterns/*", :layout => "pattern-layout"
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
 #   @which_fake_page = "Rendering a fake page with a variable"
