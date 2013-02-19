@@ -1,0 +1,25 @@
+---
+title: Fluid Video
+---
+
+<% content_for :css do %>
+<style>
+	/* Fluid Video Media Pattern CSS */
+   @media only screen and (max-width: 599px) {
+       td[class="pattern"] video,
+       td[class="pattern"] img
+       {
+           width: 100%;
+           height: auto !important;
+       }
+   }
+</style>
+<% end %>
+
+<video style="padding: 0px; margin: 0px; display: block;" poster="http://b.vimeocdn.com/ts/364/865/364865123_960.jpg" controls="controls" height="337" width="600">
+    <source src="http://player.vimeo.com/play_redirect?quality=hd&amp;codecs=h264&amp;clip_id=52861634&amp;time=1361256207&amp;sig=21d65c6cd03979983f6efa864c746c06&amp;type=html5_desktop_local"></source>
+    <source type="video/ogg" src=""></source>
+    <source type="video/webm" src=""></source>
+
+    <a href="http://vimeo.com/52861634"><img style="display: block;" border="0" src="connecting-fallback.jpg" width="600" height="337" label="Fallback Image" /></a>
+</video>
