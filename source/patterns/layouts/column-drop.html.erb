@@ -1,19 +1,21 @@
 ---
-title: Responsive Email Patterns
+title: Column Drop
 ---
-<style type="text/css" media="screen">
 
-    /* Column Drop Layout Pattern CSS */
-    @media only screen and (max-width: 450px) {
-        td[class="pattern"] td{
-            width: 100%;
-            box-sizing: border-box;
-        }
-        td[class="column"] {
-            display: block;
-        }
-    }
+<% content_for :css do %>
+<style>
+	/* Column Drop Layout Pattern CSS */
+	@media only screen and (max-width: 450px) {
+	    td[class="pattern"] td{
+	        width: 100%;
+	        box-sizing: border-box;
+	    }
+	    td[class="column"] {
+	        display: block;
+	    }
+	}
 </style>
+<% end %>
 
 <table cellpadding="0" cellspacing="0">
     <tr>
