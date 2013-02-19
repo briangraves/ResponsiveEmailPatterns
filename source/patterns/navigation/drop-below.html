@@ -17,7 +17,24 @@
         @media only screen and (max-width: 500px) {
             td[class="header"] { padding-bottom: 10px; }
         	td[class="main_nav"] { display: none; }
-            td[class="sub_nav"] { display: table-cell !important; }
+            td[class="mobile_nav"] {
+                display: table-cell !important;
+                width: auto !important;
+                height: auto !important;
+                max-width: inherit !important;
+                max-height: inherit !important;
+                overflow: auto !important;
+                float: none !important;
+                font-family: arial,sans-serif;
+                font-size: 14px !important;
+                font-weight: bold;
+            }
+            td[class="mobile_nav"] a {
+                display: block;
+                padding: 15px 20px;
+                text-decoration: none;
+                color: #999;
+            }
         }
     </style>
 </head>
@@ -43,7 +60,7 @@
                         <table cellpadding="0" cellspacing="0" width="100%">
                             <tr>
                                 <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
-                                	<a href="#" style="text-decoration: none; color: #999999;">Nav 1</a>
+                                    <a href="#" style="text-decoration: none; color: #999999;">Nav 1</a>
                                 </td>
                                 <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
                                 	<a href="#" style="text-decoration: none; color: #999999;">Nav 2</a>
@@ -70,29 +87,17 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="sub_nav" style="display: none;">
+                    <td class="mobile_nav" style="display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0;">
                         <table cellpadding="0" cellspacing="0" width="100%">
                             <tr>
-                                <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
-                                    <a href="#" style="text-decoration: none; color: #999999;">Nav 1</a>
-                                </td>
-                                <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
-                                    <a href="#" style="text-decoration: none; color: #999999;">Nav 2</a>
-                                </td>
-                                <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
-                                    <a href="#" style="text-decoration: none; color: #999999;">Nav 3</a>
-                                </td>
+                                <td align="center"><a href="#">Nav 1</a></td>
+                                <td align="center"><a href="#">Nav 2</a></td>
+                                <td align="center"><a href="#">Nav 3</a></td>
                             </tr>
                             <tr>
-                                <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
-                                    <a href="#" style="text-decoration: none; color: #999999;">Nav 4</a>
-                                </td>
-                                <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
-                                    <a href="#" style="text-decoration: none; color: #999999;">Nav 5</a>
-                                </td>
-                                <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
-                                    <a href="#" style="text-decoration: none; color: #999999;">Nav 6</a>
-                                </td>
+                                <td align="center"><a href="#">Nav 4</a></td>
+                                <td align="center"><a href="#">Nav 5</a></td>
+                                <td align="center"><a href="#">Nav 6</a></td>
                             </tr>
                         </table>
                     </td>
