@@ -1,0 +1,115 @@
+---
+title: List with Thumbnails
+---
+
+<% content_for :css do %>
+<style>
+	/* Column Drop Layout Pattern CSS */
+	@media only screen and (max-width: 599px) {
+        td[class="pattern"] img {
+            max-width: 100%;
+            height: auto !important;
+        }
+        td[class="pattern"] .col {
+            width: 25%;
+        }
+	}
+    @media only screen and (max-width: 430px) {
+        td[class="pattern"] .col {
+            width: 50%;
+            float: left;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        td[class="pattern"] .col table,
+        td[class="pattern"] .col img { width: 100%; }
+    }
+    @media only screen and (max-width: 380px) {
+        td[class="pattern"] .col {
+            width: 100%;
+            display: block;
+            float: none;
+            padding: 0 !important;
+        }
+        td[class="pattern"] .col tr {
+            display: table-cell;
+            width: 60%;
+        }
+        td[class="pattern"] .col tr:first-child {
+            width: 40%;
+            padding-right: 20px;
+        }
+        td[class="pattern"] .col td {
+            font-size: 16px !important;
+        }
+    }
+</style>
+<% end %>
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="600" style="padding-bottom: 30px; border-bottom: 1px solid #ccc;">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="4" style="padding-bottom: 20px;">
+                        <img src="http://placehold.it/600x100&text=Hero+Image" alt="" style="display: block; border: 0;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col" width="140" style="padding: 0 5px;">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left"><img src="http://placehold.it/140x140/000000&text=Thumbnail" alt="" style="display: block; border: 0;" /></td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="font-family: arial,sans-serif; font-size: 14px; padding-top: 10px;">
+                                    <strong>Title of Content</strong><br />
+                                    Summary of content
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col" width="140" style="padding: 0 5px;">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left"><img src="http://placehold.it/140x140/000000&text=Thumbnail" alt="" style="display: block; border: 0;" /></td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="font-family: arial,sans-serif; font-size: 14px; padding-top: 10px;">
+                                    <strong>Title of Content</strong><br />
+                                    Summary of content
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col" width="140" style="padding: 0 5px;">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left"><img src="http://placehold.it/140x140/000000&text=Thumbnail" alt="" style="display: block; border: 0;" /></td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="font-family: arial,sans-serif; font-size: 14px; padding-top: 10px;">
+                                    <strong>Title of Content</strong><br />
+                                    Summary of content
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col" width="140" style="padding: 0 5px;">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left"><img src="http://placehold.it/140x140/000000&text=Thumbnail" alt="" style="display: block; border: 0;" /></td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="font-family: arial,sans-serif; font-size: 14px; padding-top: 10px;">
+                                    <strong>Title of Content</strong><br />
+                                    Summary of content
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

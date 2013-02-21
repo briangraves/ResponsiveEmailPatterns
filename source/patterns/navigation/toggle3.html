@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Toggle V2 Navigation Pattern</title>
+    <style type="text/css" media="screen">
+        body, p{margin:0; padding:0; margin-bottom:0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none;} img{line-height:100%; outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;} a img{border: none;} #backgroundTable {margin:0; padding:0; width:100% !important; } a, a:link{color:#2A5DB0; text-decoration: underline;} .ExternalClass {display: block !important; width:100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; } table td {border-collapse:collapse;} sup{position: relative; top: 4px; line-height:7px !important;font-size:11px !important;} .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration: default; color: #a9a9a9 !important; /* set link color */ pointer-events: auto; cursor: default;} .no-detect a{text-decoration: none; color: #666; /* set text color */ pointer-events: auto; cursor: default;} .no-detect-local a{color: #a9a9a9;} span {color: inherit; border-bottom: none;} span:hover { background-color: transparent; }
+
+        /* Base CSS */
+        @media only screen and (max-width: 599px) {
+            td[class="wrap"] { padding: 0 10px; }
+            td[class="main_cta"] img { max-width: 100%; }
+        }
+
+        /* Toggle Navigation Pattern CSS */
+        @media only screen and (max-width: 500px) {
+            td[class="header"] {
+                padding-bottom: 10px;
+            }
+            td[id="main_nav"],
+            td[id="main_nav"] td,
+            td[id="main_nav"] a {
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            /* Toggle Switch */
+            td[class="toggle"] {
+                display: table-cell !important;
+                width: auto !important;
+                height: auto !important;
+                max-width: inherit !important;
+                max-height: inherit !important;
+                float: none !important;
+                overflow: auto !important;
+                font-size: 12px !important;
+                font-family: arial,sans-serif;
+            }
+            td[class="toggle"] a {
+                display: block;
+                position: relative;
+                padding: 10px 20px;
+                color: #999;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            td[class="toggle"] a:after {
+                content: '';
+                position: absolute;
+                top: 14px;
+                right: 0;
+                display: block;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 6px solid #999;
+            }
+
+            /* Main Nav */
+            td[id="main_nav"] {
+                position: absolute;
+                top: 65px;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+                display: none;
+                background: #B4A0A0;
+            }
+            td[id="main_nav"]:target {
+                z-index: 1001;
+                height: auto;
+                display: block;
+            }
+            td[id="main_nav"] td {
+                display: block;
+                width: 100%;
+            }
+            td[id="main_nav"] a {
+                padding: 16px 0;
+                position: relative;
+                z-index: 1;
+                display: block;
+                width: 100%;
+            }
+
+            /* Back Button */
+            td[id="main_nav"]:target .back {
+                width: auto !important;
+                height: auto !important;
+                display: block !important;
+                max-width: inherit !important;
+                max-height: inherit !important;
+                padding: 0 !important;
+                float: none !important;
+                font-size: 12px !important;
+                border: 0;
+                right: 10px;
+                top: -45px;
+                position: absolute;
+            }
+            td[id="main_nav"]:target .back a {
+                position: relative;
+                padding: 10px 30px 20px 10px;
+                background: #B4A0A0;
+                color: #fff !important;
+                font-size: 12px !important;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            td[class="back"] a:after {
+                content: '';
+                position: absolute;
+                top: 14px;
+                right: 10px;
+                display: block;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-bottom: 6px solid #fff;
+            }
+        }
+    </style>
+</head>
+
+
+<body style="background: #fff;font-family:Arial, Helvetica, sans-serif; font-size:12px;">
+
+<table id="backgroundTable" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#;">
+    <tr>
+        <td class="wrap" align="center" valign="top" style="background:#fff;" width="100%">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td id="header" class="header" style="padding-top: 20px; ">
+                        <table cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td class="logo" align="left"><a href="#"><img src="http://placehold.it/156x34&text=Logo" alt="" style="display: block; border: 0;" /></a></td>
+                                <td align="right" class="toggle" style="display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0;">
+                                    <a href="#main_nav">Menu</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="main_nav" width="600">
+                        <table cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                                	<a href="#" style="text-decoration: none; color: #999999;">Nav 1</a>
+                                </td>
+                                <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                                	<a href="#" style="text-decoration: none; color: #999999;">Nav 2</a>
+                                </td>
+                                <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                                	<a href="#" style="text-decoration: none; color: #999999;">Nav 3</a>
+                                </td>
+                                <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                                	<a href="#" style="text-decoration: none; color: #999999;">Nav 4</a>
+                                </td>
+                                <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                                	<a href="#" style="text-decoration: none; color: #999999;">Nav 5</a>
+                                </td>
+                                <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                                	<a href="#" style="text-decoration: none; color: #999999;">Nav 6</a>
+                                </td>
+                                <td class="back" style="display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0;">
+                                    <a href="#header" style="text-decoration: none; color: #fff;">menu</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="main_cta" style="padding-bottom: 10px;">
+                        <img src="http://placehold.it/600x300&text=Main+CTA" alt="" style="display: block; border: 0;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="main_cta" style="padding-bottom: 10px;">
+                        <img src="http://placehold.it/600x100&text=Sub+CTA" alt="" style="display: block; border: 0;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="footer" align="left" style="font-family: arial,sans-serif; font-size: 12px; color: #999;">
+                        This email was sent by: TBD<br />
+                        4822 West 62nd Street Mission, KS 66205<br /><br />
+                        <a href="#" style="color: #999;">Preferences</a> | <a href="#" style="color: #999;">Unsubscribe</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
