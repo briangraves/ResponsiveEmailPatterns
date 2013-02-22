@@ -1,0 +1,43 @@
+---
+title: Image Vertical Crop
+---
+
+<% content_for :css do %>
+<style>
+	/* Image Vertical Crop Pattern CSS */
+    @media only screen and (max-width: 599px) {
+        td[class="pattern"] div{
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+            -webkit-transition: height .5s ease-out;
+            -moz-transition: height .5s ease-out;
+            -ms-transition: height .5s ease-out;
+            -o-transition: height .5s ease-out;
+            transition: height .5s ease-out;
+        }
+        td[class="pattern"] img {
+        	position: absolute;
+        	top: 0;
+        	left: 50%;
+        	margin-left: -300px;
+        }
+    }
+    @media only screen and (max-width: 599px) and (max-height: 700px) {
+        td[class="pattern"] div{ height: 360px !important; }
+        td[class="pattern"] img { top: -26px; }
+    }
+    @media only screen and (max-width: 599px) and (max-height: 600px) {
+        td[class="pattern"] div{ height: 260px !important; }
+        td[class="pattern"] img { top: -26px; }
+    }
+    @media only screen and (max-width: 599px) and (max-height: 500px) {
+        td[class="pattern"] div{ height: 200px !important; }
+        td[class="pattern"] img { top: -20px; }
+    }
+</style>
+<% end %>
+
+<div style="height: 450px;">
+	<img src="michael-jordan.jpg" alt="Michael Jordan" width="600" height="450" style="display: block; border: 0;" />
+</div>
