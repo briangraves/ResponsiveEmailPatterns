@@ -1,0 +1,90 @@
+---
+title: List with Thumbnails and Summary
+---
+
+<% content_for :css do %>
+<style>
+	/* List with Thumbnails V3 Pattern CSS */
+	@media only screen and (max-width: 599px) {
+        td[class="pattern"] img,
+        td[class="pattern"] table { width: 100%; }
+        td[class="pattern"] img {
+            max-width: 100%;
+            height: auto !important;
+        }
+        td[class="pattern"] .col td {
+            width: 70%;
+            padding-right: 0 !important;
+        }
+        td[class="pattern"] .col td:first-child {
+            width: 30%;
+        }
+	}
+    @media only screen and (max-width: 450px) {
+        td[class="pattern"] .col p { display: none; }
+    }
+</style>
+<% end %>
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="600" style="padding: 30px 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+            <table cellpadding="0" cellspacing="0">
+                <tr class="row">
+                    <td class="col" valign="top" width="600" style="padding-bottom: 20px;">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left" valign="top">
+                                    <img src="http://placehold.it/160x160/000000&text=Thumbnail" alt="" style="display: block; border: 0;" />
+                                </td>
+                                <td align="left" valign="middle" style="font-family: arial,sans-serif; font-size: 16px; padding: 0 16px;">
+                                    <strong style="line-height: 30px !important;">Title of Content</strong>
+                                    <p id="description" style="color: #333; padding-bottom: 10px; font-size: 14px;">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at nibh nulla, sed vestibulum mauris. Maecenas et justo et massa adipiscing pretium. Aliquam erat volutpat.
+                                    </p>
+                                    <a href="#" style="display: block; text-decoration: none; font-weight: bold;">Read More »</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="col" valign="top" width="600" style="padding-bottom: 20px;">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left" valign="top">
+                                    <img src="http://placehold.it/160x160/000000&text=Thumbnail" alt="" style="display: block; border: 0;" />
+                                </td>
+                                <td align="left" valign="middle" style="font-family: arial,sans-serif; font-size: 16px; padding: 0 16px;">
+                                    <strong style="line-height: 30px !important;">Title of Content</strong>
+                                    <p id="description" style="color: #333; padding-bottom: 10px; font-size: 14px;">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at nibh nulla, sed vestibulum mauris. Maecenas et justo et massa adipiscing pretium. Aliquam erat volutpat.
+                                    </p>
+                                    <a href="#" style="display: block; text-decoration: none; font-weight: bold;">Read More »</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="col" valign="top" width="600">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left" valign="top">
+                                    <img src="http://placehold.it/160x160/000000&text=Thumbnail" alt="" style="display: block; border: 0;" />
+                                </td>
+                                <td align="left" valign="middle" style="font-family: arial,sans-serif; font-size: 16px; padding: 0 16px;">
+                                    <strong style="line-height: 30px !important;">Title of Content</strong>
+                                    <p id="description" style="color: #333; padding-bottom: 10px; font-size: 14px;">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at nibh nulla, sed vestibulum mauris. Maecenas et justo et massa adipiscing pretium. Aliquam erat volutpat.
+                                    </p>
+                                    <a href="#" style="display: block; text-decoration: none; font-weight: bold;">Read More »</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
