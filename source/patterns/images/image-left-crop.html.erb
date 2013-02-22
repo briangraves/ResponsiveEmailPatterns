@@ -1,10 +1,10 @@
 ---
-title: Basic Fluid Image
+title: Image Left Crop
 ---
 
 <% content_for :css do %>
 <style>
-	/* Basic Fluid Image Pattern CSS */
+	/* Image Left Crop Pattern CSS */
     @media only screen and (max-width: 599px) {
         td[class="pattern"] div{
 			position: relative;
@@ -15,13 +15,12 @@ title: Basic Fluid Image
         td[class="pattern"] img {
         	position: absolute;
         	top: 0;
-        	left: 50%;
-        	margin-left: -300px;
+        	right: 0;
         }
     }
 </style>
 <% end %>
 
 <div>
-	<img src="michael-jordan.jpg" alt="Michael Jordan" width="600" height="450" style="display: block; border: 0;" />
+	<img src="steve-mcqueen.jpg" alt="Steve Mcqueen" width="600" height="348" style="display: block; border: 0;" />
 </div>

@@ -1,0 +1,26 @@
+---
+title: Image Right Crop
+---
+
+<% content_for :css do %>
+<style>
+	/* Image Right Crop Pattern CSS */
+    @media only screen and (max-width: 599px) {
+        td[class="pattern"] div{
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			height: 450px;
+        }
+        td[class="pattern"] img {
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        }
+    }
+</style>
+<% end %>
+
+<div>
+	<img src="steve-mcqueen.jpg" alt="Steve Mcqueen" width="600" height="348" style="display: block; border: 0;" />
+</div>
