@@ -1,0 +1,132 @@
+---
+title: Gridblock with Title Sections
+---
+
+<% content_for :css do %>
+<style>
+	/* Gridblock with Title Sections Pattern CSS */
+	@media only screen and (max-width: 500px) {
+        td[class="pattern"] table { width: 100%; }
+        td[class="pattern"] .spacer { display: none; }
+        td[class="pattern"] .section-title,
+        td[class="pattern"] .section-row {
+            display: block;
+            height: auto;
+        }
+        td[class="pattern"] .section-title {
+            width: 100%;
+            padding: 20px 0;
+            margin-bottom: 8px;
+        }
+        td[class="pattern"] .section-row { width: 100%; }
+        td[class="pattern"] .section-row .section {
+            display: block;
+            float: left;
+            width: 32%;
+            height: auto;
+            margin-left: 2%;
+            padding: 60px 20px;
+            box-sizing: border-box;
+        }
+        td[class="pattern"] .section-row .section:first-child { margin-left: 0; }
+	}
+    @media only screen and (max-width: 400px) {
+        td[class="pattern"] .grid-block { padding-bottom: 0 !important; }
+        td[class="pattern"] .section-row .section {
+            float: none;
+            width: 100%;
+            margin: 0 0 8px 0;
+        }
+    }
+</style>
+<% end %>
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="grid-block" width="600" style="padding-bottom: 8px;">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="section-title" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                        Section Title
+                    </td>
+                    <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                    <td class="section-row" width="450">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    1
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    2
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    3
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="grid-block" width="600" style="padding-bottom: 8px;">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="section-title" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                        Section Title
+                    </td>
+                    <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                    <td class="section-row" width="450">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    1
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    2
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    3
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="grid-block" width="600">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="section-title" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                        Section Title
+                    </td>
+                    <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                    <td class="section-row" width="450">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    1
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    2
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    3
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
