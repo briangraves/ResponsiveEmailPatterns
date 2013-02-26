@@ -69,10 +69,3 @@ Based on Brad Frost's 'This is Responsive' <a href="http://bradfrost.github.com/
 	<li>Show More</li>
 	<li>Full to Accordion</li>
 </ul>
-
-## Off Canvas
-<ul>
-	<li>Top</li>
-	<li>Left</li>
-	<li>Right</li>
-</ul>
