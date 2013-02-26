@@ -1,0 +1,83 @@
+---
+title: 4-Up Grid Block
+---
+
+<% content_for :css do %>
+<style>
+	/* 4-Up Grid Block Pattern CSS */
+	@media only screen and (max-width: 599px) {
+        td[class="pattern"] table { width: 100%; }
+        td[class="pattern"] .spacer { display: none; }
+        td[class="pattern"] .section {
+            display: block;
+            float: left;
+            height: auto;
+            padding: 60px 20px;
+            margin-bottom: 8px;
+            box-sizing: border-box;
+        }
+        td[class="pattern"] .section {
+            width: 23%;
+            margin-left: 2.66666667%;
+        }
+        td[class="pattern"] .section:first-child { margin-left: 0; }
+	}
+    @media only screen and (max-width: 550px) {
+        td[class="pattern"] .section {
+            width: 32%;
+            margin-left: 2%;
+        }
+    }
+</style>
+<% end %>
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="grid-block" width="600" style="padding-bottom: 8px;">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="row four">
+                        <table cellpadding="0" cellspacing="0">
+                            <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                1
+                            </td>
+                            <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                            <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                2
+                            </td>
+                            <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                            <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                3
+                            </td>
+                            <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                            <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                4
+                            </td>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row four" style="padding-top: 8px;">
+                        <table cellpadding="0" cellspacing="0">
+                            <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                5
+                            </td>
+                            <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                            <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                6
+                            </td>
+                            <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                            <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                7
+                            </td>
+                            <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                            <td class="section" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                8
+                            </td>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
