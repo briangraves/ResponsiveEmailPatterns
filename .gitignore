@@ -1,7 +1,9 @@
-.sass-cache
+# Logfiles and Tempfiles  #
+ /log/*.log
+ /tmp
++.sass-cache/
 
 # OS generated files #
-######################
 .DS_Store
 .DS_Store?
 ._*
