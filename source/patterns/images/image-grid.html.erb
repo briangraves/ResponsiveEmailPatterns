@@ -6,13 +6,12 @@ title: Image Grid
 <style>
 	/* Fluid Image Grid Pattern CSS */
     @media only screen and (max-width: 599px) {
+        td[class="pattern"] table { table-layout:fixed; }
         td[class="grid"] img{
             width: 100% !important;
             height: auto !important;
         }
         td[class="grid"] td {
-            display: block;
-            float: left;
             width: 25%;
         }
     }
@@ -28,7 +27,7 @@ title: Image Grid
 <table cellpadding="0" cellspacing="0">
     <tr>
         <td class="grid" width="600">
-            <table cellpadding="0" cellspacing="0" width="100%">
+            <table cellpadding="0" cellspacing="0" width="100%" style="border: 0;">
                 <tr>
                     <td><img src="steve-mcqueen.jpg" alt="Steve McQueen" width="150" height="87" style="display: block; border: 0;" /></td>
                     <td><img src="steve-mcqueen.jpg" alt="Steve McQueen" width="150" height="87" style="display: block; border: 0;" /></td>

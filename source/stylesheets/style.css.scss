@@ -7,8 +7,7 @@
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 body {
 	background-color: #fff;
-	@include filter-gradient(#1e5799, #ffffff, vertical);
-	@include background-image(linear-gradient(top,  #1e5799 0%,#1e5799 0%,#edeeef 0%,#ffffff 27%,#ffffff 100%));
+	@include background-image(linear-gradient(top, #1e5799 0%,#1e5799 0%,#edeeef 0%,#ffffff 27%,#ffffff 100%));
 	background-repeat: no-repeat;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
