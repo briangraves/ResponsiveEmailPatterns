@@ -54,7 +54,7 @@ a[href="#"] { color: #ddd; }
 		a { color: #a29f9f; text-decoration: underline; }
 	}
 }
-.index, .support {
+.index, .support, .resources {
 	.header {
 		h1 {
 			&:before {
@@ -153,7 +153,7 @@ footer {
 }
 
 @media only screen and (min-width: 37.5em) {
-	.index section { width: 49.5%; }
+	.index section, .resources section { width: 49.5%; }
 }
 @media only screen and (min-width: 62.5em) {
 	.index section { width: 33%; }
