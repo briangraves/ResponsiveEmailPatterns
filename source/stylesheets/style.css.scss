@@ -186,7 +186,6 @@ footer {
 		th { vertical-align: bottom; }
 		td { vertical-align: top; }
 		th, td {
-			position: relative;
 			padding: 1em 0.5em;
 			text-align: left;
 			border-bottom: 1px solid #e6e9eb;
@@ -194,6 +193,7 @@ footer {
 			&:last-child { text-align: right; }
 		}
 		.support_level {
+				position: relative;
 				padding-right: 2.75em;
 				&:after {
 					display: block;
@@ -202,6 +202,7 @@ footer {
 					right: 0.5em;
 					width: 1.4em;
 					height: 1.4em;
+					background: url('../images/support.png') no-repeat;
 					border-radius: 1em;
 					text-align: center;
 					font-weight: bold;
@@ -209,16 +210,19 @@ footer {
 				}
 		}
 		.support_level.full:after {
-			content: '√';
-			background: #7ebd26;
+			content: '';
+			background-color: #7ebd26;
+			background-position: -1px -1px;
 		}
 		.support_level.working:after {
-			content: '—';
-			background: #72d0eb;
+			content: '';
+			background-color: #72d0eb;
+			background-position: center center;
 		}
 		.support_level.none:after {
-			content: 'x';
-			background: #f01c00;
+			content: '';
+			background-color: #f01c00;
+			background-position: center -51px;
 		}
 	}
 }
