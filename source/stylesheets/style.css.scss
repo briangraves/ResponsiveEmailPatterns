@@ -12,8 +12,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	font-weight: 300;
-	padding: 0 20px;
-	margin-bottom: 3em;
+	padding: 0 1.25em;
 }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 300; }
@@ -92,6 +91,66 @@ ul {
 		}
 	}
 }
+footer {
+    z-index: 2;
+    margin: 0 -1.25em;
+    padding-bottom: 1em;
+    background: #3299bb;
+    background: rgba(50, 153, 187, 0.9);
+    ul {
+    	li {
+    		padding: 0;
+    		font-size: 1em;
+    		a {
+    			padding: 1em 2.5em;
+    			font-size: 0.8em;
+    			color: #bbeafa;
+				&:hover { background: rgba(50, 153, 187, 0.9); color: #fff; }
+    		}
+    		&:first-child {
+    			font-weight: bold;
+    			a { border: 0; padding: 1.5em 2em 0.75em 2em; color: #fff; font-size: 1em; }
+    			a:hover {
+    				background: none;
+    			}
+    		}
+    	}
+    }
+}
+@media only screen and (min-width: 40em) {
+	footer {
+		ul {
+			li {
+				display: inline-block;
+				&:first-child { display: block; }
+			}
+		}
+	}
+}
+@media only screen and (min-width: 58em) {
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		padding: 0 0 0 2em;
+		width: 100%;
+		nav {
+			max-width: 58.5em;
+			margin: 0 auto;
+			ul {
+				li {
+					a { padding: 1em; }
+					&:first-child {
+						display: inline-block;
+						a { padding: 0.7em; }
+					}
+				}
+			}
+		}
+	}
+}
+
 @media only screen and (min-width: 37.5em) {
 	.index section { width: 49.5%; }
 }
