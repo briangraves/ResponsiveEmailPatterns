@@ -28,6 +28,7 @@ footer {
 				-webkit-transition: color 0.5s;
 				-o-transition: color 0.5s;
 				transition: color 0.5s;
+				-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 				&:link, &:visited { color: #bbeafa; }
 				&:hover { background: rgba(50, 153, 187, 0.9); color: #fff; }
     		}
