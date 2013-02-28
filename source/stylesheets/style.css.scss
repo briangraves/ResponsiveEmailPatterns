@@ -128,6 +128,7 @@ footer {
 	}
 }
 @media only screen and (min-width: 58em) {
+	body { padding-bottom: 3em; }
 	footer {
 		position: fixed;
 		bottom: 0;
@@ -170,10 +171,12 @@ footer {
 
 /* Pattern Support */
 .support {
-	padding-bottom: 2em;
-	.header ul li {
-		font-size: 0.9em;
-		color: #999;
+	.header {
+		a { color: #3299bb; }
+		ul li {
+			font-size: 0.9em;
+			color: #999;
+		}
 	}
 }
 .pattern_support {
