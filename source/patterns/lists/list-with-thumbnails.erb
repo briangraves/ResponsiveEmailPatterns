@@ -7,7 +7,7 @@ title: List with Thumbnails
 	/* List with Thumbnails Pattern CSS */
 	@media only screen and (max-width: 599px) {
         td[class="pattern"] img {
-            max-width: 100%;
+            width: 100%;
             height: auto !important;
         }
         td[class="pattern"] .col {
@@ -19,6 +19,8 @@ title: List with Thumbnails
             width: 50%;
             float: left;
             margin-bottom: 20px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
         td[class="pattern"] .col table,

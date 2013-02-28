@@ -7,8 +7,11 @@ title: Image Surround
 	/* Image Surround Layout Pattern CSS */
 	@media only screen and (max-width: 599px) {
         td[class="pattern"] img {
-            max-width: 100%;
+            width: 100%;
             height: auto !important;
+        }
+        td[class="pattern"] img.cta {
+            width: auto;
         }
         td[class="pattern"] table,
         td[class="pattern"] .row {
@@ -85,7 +88,7 @@ title: Image Surround
                                         </tr>
                                         <tr>
                                             <td align="center" style="padding: 10px;">
-                                                <img src="http://placehold.it/120x40/333333&text=Shop+Now" alt="" style="display: block; border: 0;" />
+                                                <img class="cta" src="http://placehold.it/120x40/333333&text=Shop+Now" alt="" style="display: block; border: 0;" />
                                             </td>
                                         </tr>
                                     </table>
