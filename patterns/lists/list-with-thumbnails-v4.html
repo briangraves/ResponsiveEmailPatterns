@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width">
-    <title>List with Thumbnails & Summary Hide | Responsive Email Patterns</title>
+    <title>List with Thumbnails & Summary Stacked | Responsive Email Patterns</title>
 
     <style type="text/css" media="screen">
         /* Boilerplate Reset */
@@ -33,9 +33,8 @@
     </style>
 
     <style>
-	/* List with Thumbnails & Summary Hide Pattern CSS */
+	/* List with Thumbnails & Summary Stacked Pattern CSS */
 	@media only screen and (max-width: 599px) {
-        td[class="pattern"] img,
         td[class="pattern"] table { width: 100%; }
         td[class="pattern"] img {
             width: 100%;
@@ -50,7 +49,22 @@
         }
 	}
     @media only screen and (max-width: 450px) {
-        td[class="pattern"] .col p { display: none; }
+        td[class="pattern"] img { width: 160px; margin: 0 auto; }
+        td[class="pattern"] .col td,
+        td[class="pattern"] .col td:first-child {
+            width: 100%;
+            display: block;
+            text-align: center;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        td[class="pattern"] td.description {
+            padding: 10px 18px 20px 18px !important;
+        }
+        td[class="pattern"] td.description strong {
+            font-size: 20px;
+        }
     }
 </style>
 
@@ -112,9 +126,9 @@
                                 <td align="left" valign="top">
                                     <img src="http://placehold.it/160x160/333333&text=Thumbnail" alt="" style="display: block; border: 0;" />
                                 </td>
-                                <td align="left" valign="middle" style="font-family: arial,sans-serif; font-size: 16px; color: #333; padding: 0 16px;">
+                                <td class="description" align="left" valign="middle" style="font-family: arial,sans-serif; font-size: 16px; color: #333; padding: 0 16px;">
                                     <strong style="line-height: 30px !important;">Title of Content</strong>
-                                    <p id="description" style="padding-bottom: 10px; font-size: 14px;">
+                                    <p style="padding-bottom: 10px; font-size: 14px;">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at nibh nulla, sed vestibulum mauris. Maecenas et justo et massa adipiscing pretium. Aliquam erat volutpat.
                                     </p>
                                     <a href="#" style="display: block; text-decoration: none; font-weight: bold;">Read More »</a>
@@ -130,9 +144,9 @@
                                 <td align="left" valign="top">
                                     <img src="http://placehold.it/160x160/333333&text=Thumbnail" alt="" style="display: block; border: 0;" />
                                 </td>
-                                <td align="left" valign="middle" style="font-family: arial,sans-serif; font-size: 16px; color: #333; padding: 0 16px;">
+                                <td class="description" align="left" valign="middle" style="font-family: arial,sans-serif; font-size: 16px; color: #333; padding: 0 16px;">
                                     <strong style="line-height: 30px !important;">Title of Content</strong>
-                                    <p id="description" style="padding-bottom: 10px; font-size: 14px;">
+                                    <p style="padding-bottom: 10px; font-size: 14px;">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at nibh nulla, sed vestibulum mauris. Maecenas et justo et massa adipiscing pretium. Aliquam erat volutpat.
                                     </p>
                                     <a href="#" style="display: block; text-decoration: none; font-weight: bold;">Read More »</a>
@@ -148,9 +162,9 @@
                                 <td align="left" valign="top">
                                     <img src="http://placehold.it/160x160/333333&text=Thumbnail" alt="" style="display: block; border: 0;" />
                                 </td>
-                                <td align="left" valign="middle" style="font-family: arial,sans-serif; font-size: 16px; color: #333; padding: 0 16px;">
+                                <td class="description" align="left" valign="middle" style="font-family: arial,sans-serif; font-size: 16px; color: #333; padding: 0 16px;">
                                     <strong style="line-height: 30px !important;">Title of Content</strong>
-                                    <p id="description" style="padding-bottom: 10px; font-size: 14px;">
+                                    <p style="padding-bottom: 10px; font-size: 14px;">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at nibh nulla, sed vestibulum mauris. Maecenas et justo et massa adipiscing pretium. Aliquam erat volutpat.
                                     </p>
                                     <a href="#" style="display: block; text-decoration: none; font-weight: bold;">Read More »</a>
