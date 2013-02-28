@@ -54,7 +54,7 @@ a[href="#"] { color: #ddd; }
 		a { color: #a29f9f; text-decoration: underline; }
 	}
 }
-.index {
+.index, .support {
 	.header {
 		h1 {
 			&:before {
@@ -166,6 +166,15 @@ footer {
 	.smartphone { width: 13%; }
 	.tablet { width: 25%; }
 	.desktop { width: 39.0625%; }
+}
+
+/* Pattern Support */
+.support {
+	padding-bottom: 2em;
+	.header ul li {
+		font-size: 0.9em;
+		color: #999;
+	}
 }
 .pattern_support {
 	table {
