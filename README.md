@@ -37,7 +37,8 @@ Based on Brad Frost's 'This is Responsive' <a href="http://bradfrost.github.com/
 <ul>
 	<li>List with Thumbnails</li>
 	<li>List with Thumbnails V2</li>
-	<li>List with Thumbnails and Summary</li>
+	<li>List with Thumbnails & Summary Stack</li>
+	<li>List with Thumbnails & Summary Hide</li>
 </ul>
 
 ## Grid Block
