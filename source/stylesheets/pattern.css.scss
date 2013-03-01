@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
+#backgroundTable { padding-bottom: 2em; }
 
 .pattern-details {
 	max-width: 50em;
@@ -81,6 +82,7 @@ footer {
 	}
 }
 @media only screen and (min-width: 58em) {
+	#backgroundTable { padding-bottom: 6em; }
 	footer {
 		position: fixed;
 		bottom: 0;
