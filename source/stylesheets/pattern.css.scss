@@ -1,6 +1,34 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
-#backgroundTable { padding-bottom: 2em; }
+
+.pattern-details {
+	max-width: 50em;
+	margin: 4em auto 6em auto;
+	padding: 2em 2em;
+	background: url('../images/shadow.png') center top no-repeat;
+	background-size: 100%;
+	font-size: 1.33em;
+	font-family: 'Open Sans', sans-serif;
+	color: #999;
+	h1, h2, h3, h4, h5, h6 { font-weight: 300; color: #333; }
+	h1 { color: #3299bb; font-size: 2em; }
+	h2 { margin: 1em 0 0.25em 0; }
+	a {
+		color: #666;
+		text-decoration: none;
+		-moz-transition: color 0.5s;
+		-webkit-transition: color 0.5s;
+		-o-transition: color 0.5s;
+		transition: color 0.5s;
+	}
+	a:hover { color: #3299bb; }
+	.code code {
+		display: block;
+		margin: 0;
+		padding: 0.5em;
+		border: 2px solid #eee;
+	}
+}
 footer {
     z-index: 2;
     padding-bottom: 1em;
@@ -53,7 +81,6 @@ footer {
 	}
 }
 @media only screen and (min-width: 58em) {
-	#backgroundTable { padding-bottom: 6em; }
 	footer {
 		position: fixed;
 		bottom: 0;
