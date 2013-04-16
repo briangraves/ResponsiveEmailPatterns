@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width">
-    <title>Image Right Crop | Responsive Email Patterns</title>
+    <title>Basic Fluid Image | Responsive Email Patterns</title>
 
     <style type="text/css" media="screen">
         /* Boilerplate Reset */
@@ -33,20 +33,19 @@
     </style>
 
     <style>
-	/* Image Right Crop Pattern CSS */
-    @media only screen and (max-width: 599px) {
-        td[class="pattern"] div{
-			position: relative;
-			overflow: hidden;
-			width: 100%;
-			height: 450px;
+  /* Description Overlay Pattern CSS */
+   @media only screen and (max-width: 599px) {
+            table { width: 100%; }
+            td[class=container] {
+                background-size: auto 100%;
+                background-position: center top;
+                width: 100%;
+                height: auto;
+                min-height: 200px;
+                padding-top: 100px !important;
+            }
+            td[class=spacer] { display: none; height: 0;}
         }
-        td[class="pattern"] img {
-        	position: absolute;
-        	top: 0;
-        	left: 0;
-        }
-    }
 </style>
 
 </head>
@@ -96,9 +95,42 @@
                     <tr>
                         <td class="pattern" width="600">
                           
-<div>
-	<img src="steve-mcqueen.jpg" alt="Steve Mcqueen" width="600" height="348" style="display: block; border: 0;" />
-</div>
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="container" background="http://placedog.com/600/300" width="600" height="300" style="background-position: center top;">
+          <!--[if gte mso 9]>
+          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:300px;">
+            <v:fill type="tile" src="http://placedog.com/600/300" color="#ff0000" />
+            <v:textbox inset="0,0,0,0">
+          <![endif]-->
+          <table cellpadding="0" cellspacing="0">
+              <tr>
+                  <td class="spacer" height="150">&nbsp;</td>
+              </tr>
+              <tr>
+                  <td class="inner-container" width="600" height="150" align="left" valign="top" style="background-color: #ccc; background: rgba(30,30,30,0.7);">
+                      <table cellpadding="0" cellspacing="0">
+                          <tr>
+                              <td align="left" style="padding: 14px 16px 10px 16px; font-family: arial,sans-serif; font-size: 16px; line-height: 22px; color: #fff;">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, nisi, quis, at, magnam magni maiores pariatur eos ullam consectetur excepturi alias sed! Debitis, iusto, minima atque reiciendis in aut eaque!
+                              </td>
+                          </tr>
+                          <tr>
+                              <td align="right" style="padding: 0 16px 14px 16px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                                  <a href="#" style="text-decoration: none; color: #fff; display: block; padding: 0 5px; width: 100px; text-align: center; line-height: 40px; background: blue;">CTA ></a>
+                              </td>
+                          </tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+          <!--[if gte mso 9]>
+            </v:textbox>
+          </v:rect>
+          <![endif]-->
+        </td>
+    </tr>
+</table>
                         </td>
                     </tr>
                     <tr>
@@ -118,7 +150,7 @@
 
     <!--
     <section class="pattern-details">
-        <h1>Image Right Crop</h1>
+        <h1>Basic Fluid Image</h1>
         <div class="considerations">
             <h2>Considerations</h2>
             <p>

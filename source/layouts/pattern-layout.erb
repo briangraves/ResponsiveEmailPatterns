@@ -97,27 +97,31 @@
     <!-- Remove From Pattern -->
     <%= stylesheet_link_tag "pattern" %>
 
-    <!--<section class="pattern-details">
+    <!--
+    <section class="pattern-details">
         <h1><%= data.page.title %></h1>
         <div class="considerations">
             <h2>Considerations</h2>
             <p>
-                This is a pattern consideration
+                <%= data.page.considerations %>
             </p>
         </div>
         <div class="inthewild">
             <h2>In the Wild</h2>
             <p>
-                <a href="#">Example</a>
+                <a href="<%= data.page.inthewildurl %>"><%= data.page.inthewild %></a>
             </p>
         </div>
         <div class="code">
             <h2>Get the Code</h2>
-            <code>
-               &lt;html&gt;
-            </code>
+            <pre>
+              <code>
+
+              </code>
+            </pre>
         </div>
-    </section>-->
+    </section>
+     -->
 
     <footer>
       <nav>
@@ -131,6 +135,7 @@
       </nav>
     </footer>
     <!-- // Remove From Pattern -->
+
 
     <script type="text/javascript">
 
