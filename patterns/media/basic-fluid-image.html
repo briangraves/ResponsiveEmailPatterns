@@ -14,7 +14,7 @@
         <script src="../../javascripts/plugins/modernizr.js" type="text/javascript"></script>
 <script src="../../javascripts/init.js" type="text/javascript"></script>
     </head>
-    <body class="patterns patterns_media patterns_media_fluid-video">
+    <body class="patterns patterns_media patterns_media_basic-fluid-image">
         
         <header class="header interior">
 	<div class="wrap">
@@ -29,26 +29,16 @@
             <div class="wrap">
                     <section class="pattern_wrap">
         <style>
-	/* Fluid Video Media Pattern CSS */
-   @media only screen and (max-width: 599px) {
-       div[class="pattern"] video,
-       div[class="pattern"] img
-       {
-           width: 100%;
-           height: auto !important;
-       }
-   }
+	/* Basic Fluid Image Pattern CSS */
+    @media only screen and (max-width: 599px) {
+        img.pattern {
+            width: 100%;
+            height: auto !important;
+        }
+    }
 </style>
 
-<div class="pattern">
-  <video style="padding: 0px; margin: 0px; display: block;" poster="http://b.vimeocdn.com/ts/364/865/364865123_960.jpg" controls="controls" height="337" width="600">
-      <source src="http://player.vimeo.com/play_redirect?quality=hd&amp;codecs=h264&amp;clip_id=52861634&amp;time=1361256207&amp;sig=21d65c6cd03979983f6efa864c746c06&amp;type=html5_desktop_local"></source>
-      <source type="video/ogg" src=""></source>
-      <source type="video/webm" src=""></source>
-
-      <a href="http://vimeo.com/52861634"><img style="display: block;" border="0" src="connecting-fallback.jpg" width="600" height="337" label="Fallback Image" /></a>
-  </video>
-</div>
+<img class="pattern" src="michael-jordan.jpg" alt="Michael Jordan" width="600" height="450" style="display: block; border: 0;" />
     </section>
 
             </div>

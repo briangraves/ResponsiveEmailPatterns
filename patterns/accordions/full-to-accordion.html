@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <title>Responsive Email Patterns</title>
+        <link rel="icon" type="icon" href="images/favicon.png">
+        <link href="../../stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+        <script src="../../javascripts/plugins/modernizr.js" type="text/javascript"></script>
+<script src="../../javascripts/init.js" type="text/javascript"></script>
+    </head>
+    <body class="patterns patterns_accordions patterns_accordions_full-to-accordion">
+        
+        <header class="header interior">
+	<div class="wrap">
+		<a href="http://www.responsiveemailpatterns.com">
+			<img src="../../images/envelope.svg" alt="" width="20" />
+			<h1>Responsive Patterns</h1>
+		</a>
+	</div>
+</header>
+        
+        <section class="main">
+            <div class="wrap">
+                    <section class="pattern_wrap">
+        <style>
+	/* Full to Accordion Pattern CSS */
+	@media only screen and (max-width: 450px) {
+        table[class="pattern"] .story {
+            padding: 0 10px 0 10px !important;
+
+        }
+	    table[class="pattern"] .story p {
+	        max-height: 0;
+            overflow: hidden;
+
+	    }
+        table[class="pattern"] .story h1 a { display: block; position: relative; }
+        table[class="pattern"] .story h1 a:after {
+            content: '+';
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+        }
+        table[class="pattern"] #story1:target p,
+        table[class="pattern"] #story2:target p,
+        table[class="pattern"] #story3:target p {
+            max-height: 999px;
+            margin-bottom: 30px;
+            -webkit-transition: max-height 0.5s ease-out;
+            -moz-transition: max-height 0.5s ease-out;
+            -ms-transition: max-height 0.5s ease-out;
+            -o-transition: max-height 0.5s ease-out;
+            transition: max-height 0.5s ease-out;
+        }
+	}
+</style>
+
+<table cellpadding="0" cellspacing="0" class="pattern">
+    <tr>
+        <td class="story" id="story1" width="600" align="left" valign="top" style="border-top: 1px solid #999; border-bottom: 1px dotted #999; font-family: arial,sans-serif; font-size: 14px; padding: 0 0 30px 0;">
+        	<h1><a href="#story1" style="text-decoration: none; color: #333">Story 1</a></h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
+            </p>
+            <a class="readmore" href="#story1" style="display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0; color: #fff;">Read More</a>
+        </td>
+    </tr>
+    <tr>
+        <td class="story" id="story2" width="600" align="left" valign="top" style="border-bottom: 1px dotted #999; font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 0 0 30px 0;">
+            <h1><a href="#story2" style="text-decoration: none; color: #333">Story 2</a></h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
+            </p>
+            <a class="readmore" href="#story2" style="display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0; color: #fff;">Read More</a>
+        </td>
+    </tr>
+    <tr>
+        <td class="story" id="story3" width="600" align="left" valign="top" style="border-bottom: 1px solid #999; font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 0 0 30px 0;">
+            <h1><a href="#story3" style="text-decoration: none; color: #333">Story 3</a></h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
+            </p>
+            <a class="readmore" href="#story3" style="display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0; color: #fff;">Read More</a>
+        </td>
+    </tr>
+</table>
+    </section>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+	<nav>
+		<ul>
+			<li><a class="brand" href="http://www.responsiveemailpatterns.com">Responsive Email Patterns</a></li>
+			<li><a href="http://www.responsiveemailprocess.com">Responsive Email Process</a></li>
+			<li><a href="http://www.responsiveemailresources.com">Responsive Email Resources</a></li>
+			<li><a href="https://github.com/briangraves/ResponsiveEmailPatterns">Fork on Github</a></li>
+			<li><a href="http://www.twitter.com/briangraves">@BrianGraves</a></li>
+		</ul>
+	</nav>
+</footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../../javascripts/all.js" type="text/javascript"></script>
+    </body>
+</html>
