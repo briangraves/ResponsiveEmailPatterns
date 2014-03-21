@@ -18,27 +18,55 @@
         
         <header class="header interior">
 	<div class="wrap">
-		<a href="http://www.responsiveemailpatterns.com">
+		<a class="logo" href="http://www.responsiveemailpatterns.com">
 			<img src="http://briangraves.github.io/ResponsiveEmailPatterns/images/envelope.svg" alt="" width="20" />
 			<h1>Responsive Patterns</h1>
 		</a>
+
+		
+			<!--<a id="source" href="#" class="button source">
+				<img src="../../images/source.svg" alt="" width="32" />
+				<h1>Source</h1>
+			</a>-->
+			
+			<a id="context" href="#" class="button context">
+				<img src="../../images/context.svg" alt="" width="20" />
+				<h1>Context</h1>
+			</a>
+		
+
 	</div>
 </header>
         
         <section class="main">
             <div class="wrap">
-                    <section class="pattern_wrap">
+                    <section class="pattern-wrap">
+		<div class="pattern-header ">
+			<div class="pattern-logo">
+				<a href="#"><img src="http://placehold.it/156x46&text=Logo" alt="" style="display: block; border: 0;" /></a>
+			</div>
+			<div class="pattern-nav">
+				
+				<a href="#">Navigation Item</a>
+				
+				<a href="#">Navigation Item</a>
+				
+				<a href="#">Navigation Item</a>
+				
+				<a href="#">Navigation Item</a>
+				
+				<a href="#">Navigation Item</a>
+				
+			</div>
+		</div>
+
         <style>
 	/* Full to Accordion Pattern CSS */
 	@media only screen and (max-width: 450px) {
-        table[class="pattern"] .story {
-            padding: 0 10px 0 10px !important;
-
-        }
 	    table[class="pattern"] .story p {
 	        max-height: 0;
             overflow: hidden;
-
+            margin: 0;
 	    }
         table[class="pattern"] .story h1 a { display: block; position: relative; }
         table[class="pattern"] .story h1 a:after {
@@ -52,7 +80,7 @@
         table[class="pattern"] #story2:target p,
         table[class="pattern"] #story3:target p {
             max-height: 999px;
-            margin-bottom: 30px;
+            margin: 16px 0;
             -webkit-transition: max-height 0.5s ease-out;
             -moz-transition: max-height 0.5s ease-out;
             -ms-transition: max-height 0.5s ease-out;
@@ -64,8 +92,8 @@
 
 <table cellpadding="0" cellspacing="0" class="pattern">
     <tr>
-        <td class="story" id="story1" width="600" align="left" valign="top" style="border-top: 1px solid #999; border-bottom: 1px dotted #999; font-family: arial,sans-serif; font-size: 14px; padding: 0 0 30px 0;">
-        	<h1><a href="#story1" style="text-decoration: none; color: #333">Story 1</a></h1>
+        <td class="story" id="story1" width="600" align="left" valign="top" style="border-bottom: 1px dotted #999; font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 0 0 16px 0;">
+        	<h1 style="margin: 0;"><a href="#story1" style="text-decoration: none; color: #333">Story 1</a></h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
             </p>
@@ -73,8 +101,8 @@
         </td>
     </tr>
     <tr>
-        <td class="story" id="story2" width="600" align="left" valign="top" style="border-bottom: 1px dotted #999; font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 0 0 30px 0;">
-            <h1><a href="#story2" style="text-decoration: none; color: #333">Story 2</a></h1>
+        <td class="story" id="story2" width="600" align="left" valign="top" style="border-bottom: 1px dotted #999; font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 16px 0;">
+            <h1 style="margin: 0;"><a href="#story2" style="text-decoration: none; color: #333">Story 2</a></h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
             </p>
@@ -82,8 +110,8 @@
         </td>
     </tr>
     <tr>
-        <td class="story" id="story3" width="600" align="left" valign="top" style="border-bottom: 1px solid #999; font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 0 0 30px 0;">
-            <h1><a href="#story3" style="text-decoration: none; color: #333">Story 3</a></h1>
+        <td class="story" id="story3" width="600" align="left" valign="top" style="font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 16px 0 0 0;">
+            <h1 style="margin: 0;"><a href="#story3" style="text-decoration: none; color: #333">Story 3</a></h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
             </p>
@@ -91,7 +119,22 @@
         </td>
     </tr>
 </table>
+
+        <div class="pattern-footer">
+        	<p>
+        		This email was sent by: Your Company Here<br />
+        		4822 West 62nd Street Mission, KS 66205<br /><br />
+        		<a href="#" style="color: #999;">Preferences</a> | <a href="#" style="color: #999;">Unsubscribe</a>
+        	</p>
+		</div>
     </section>
+
+    <!--
+    <section class="pattern-desc">
+    	<h1>Full To Accordion</h1>
+    	<p></p>
+    </section>
+    -->
 
             </div>
         </section>
