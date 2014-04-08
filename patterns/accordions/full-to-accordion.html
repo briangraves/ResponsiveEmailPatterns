@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
 	/* Full to Accordion Pattern CSS */
 	@media only screen and (max-width: 450px) {
 	    table[class="pattern"] .story p {
@@ -112,6 +112,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -124,6 +125,73 @@
     <section class="pattern-desc">
     	<h1>Full To Accordion</h1>
     	<p>A container is used to truncate description text based on screen size. Once text has been truncated, a cta is used to allow for the truncated content to be viewed on request in accordion like approach.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+	&#x2F;* Full to Accordion Pattern CSS *&#x2F;
+	@media only screen and (max-width: 450px) {
+	    table[class=&quot;pattern&quot;] .story p {
+	        max-height: 0;
+            overflow: hidden;
+            margin: 0;
+	    }
+        table[class=&quot;pattern&quot;] .story h1 a { display: block; position: relative; }
+        table[class=&quot;pattern&quot;] .story h1 a:after {
+            content: &#x27;+&#x27;;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+        }
+        table[class=&quot;pattern&quot;] #story1:target p,
+        table[class=&quot;pattern&quot;] #story2:target p,
+        table[class=&quot;pattern&quot;] #story3:target p {
+            max-height: 999px;
+            margin: 16px 0;
+            -webkit-transition: max-height 0.5s ease-out;
+            -moz-transition: max-height 0.5s ease-out;
+            -ms-transition: max-height 0.5s ease-out;
+            -o-transition: max-height 0.5s ease-out;
+            transition: max-height 0.5s ease-out;
+        }
+	}
+&lt;&#x2F;style&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;pattern&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;story&quot; id=&quot;story1&quot; width=&quot;600&quot; align=&quot;left&quot; valign=&quot;top&quot; style=&quot;border-bottom: 1px dotted #999; font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 0 0 16px 0;&quot;&gt;
+        	&lt;h1 style=&quot;margin: 0;&quot;&gt;&lt;a href=&quot;#story1&quot; style=&quot;text-decoration: none; color: #333&quot;&gt;Story 1&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
+            &lt;&#x2F;p&gt;
+            &lt;a class=&quot;readmore&quot; href=&quot;#story1&quot; style=&quot;display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0; color: #fff;&quot;&gt;Read More&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;story&quot; id=&quot;story2&quot; width=&quot;600&quot; align=&quot;left&quot; valign=&quot;top&quot; style=&quot;border-bottom: 1px dotted #999; font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 16px 0;&quot;&gt;
+            &lt;h1 style=&quot;margin: 0;&quot;&gt;&lt;a href=&quot;#story2&quot; style=&quot;text-decoration: none; color: #333&quot;&gt;Story 2&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
+            &lt;&#x2F;p&gt;
+            &lt;a class=&quot;readmore&quot; href=&quot;#story2&quot; style=&quot;display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0; color: #fff;&quot;&gt;Read More&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;story&quot; id=&quot;story3&quot; width=&quot;600&quot; align=&quot;left&quot; valign=&quot;top&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 16px 0 0 0;&quot;&gt;
+            &lt;h1 style=&quot;margin: 0;&quot;&gt;&lt;a href=&quot;#story3&quot; style=&quot;text-decoration: none; color: #333&quot;&gt;Story 3&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
+            &lt;&#x2F;p&gt;
+            &lt;a class=&quot;readmore&quot; href=&quot;#story3&quot; style=&quot;display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0; color: #fff;&quot;&gt;Read More&lt;&#x2F;a&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

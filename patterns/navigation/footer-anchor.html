@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
     .main_cta img { width: 100%; height: auto !important; }
 
     /* Footer Anchor Navigation Pattern CSS */
@@ -141,6 +141,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -153,6 +154,102 @@
     <section class="pattern-desc">
     	<h1>Footer Anchor</h1>
     	<p>Navigation begins as a single row at the top of the layout. At a specified breakpoint, the entire nav drops from the top and moves down to a stacked layout below the main message. A menu or hamburger button is added at the top of the layout that anchors to the stacked menu.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+    .main_cta img { width: 100%; height: auto !important; }
+
+    &#x2F;* Footer Anchor Navigation Pattern CSS *&#x2F;
+    @media only screen and (max-width: 500px) {
+        td[id=&quot;header&quot;] {
+            padding-bottom: 10px;
+        }
+        td[class=&quot;toggle&quot;] {
+            display: table-cell !important;
+            width: auto !important;
+            height: auto !important;
+            max-width: inherit !important;
+            max-height: inherit !important;
+            float: none !important;
+            overflow: auto !important;
+            font-size: 12px !important;
+            font-family: arial,sans-serif;
+        }
+        td[class=&quot;toggle&quot;] a {
+            display: block;
+            padding: 10px 0;
+        }
+        tr[class=&quot;main_nav&quot;] {
+            display: table-footer-group;
+        }
+        tr[class=&quot;main_nav&quot;] td {
+            display: block;
+            width: 100%;
+            padding: 0 !important;
+        }
+        tr[class=&quot;main_nav&quot;] a {
+            display: block;
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid #999;
+        }
+        tr[class=main_cta] {
+            display: table-header-group;
+        }
+    }
+&lt;&#x2F;style&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt;
+        &lt;td id=&quot;header&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;logo&quot; align=&quot;left&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;156x34&amp;text=Logo&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;
+                    &lt;td align=&quot;right&quot; class=&quot;toggle&quot; style=&quot;display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0;&quot;&gt;
+                        &lt;a href=&quot;#mobile_nav&quot;&gt;Menu&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr class=&quot;main_nav&quot;&gt;
+        &lt;td id=&quot;mobile_nav&quot; width=&quot;600&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;center&quot; style=&quot;padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 1&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td align=&quot;center&quot; style=&quot;padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 2&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td align=&quot;center&quot; style=&quot;padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 3&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td align=&quot;center&quot; style=&quot;padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 4&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td align=&quot;center&quot; style=&quot;padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 5&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td align=&quot;center&quot; style=&quot;padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 6&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr class=&quot;main_cta&quot;&gt;
+        &lt;td&gt;
+            &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;600x300&amp;text=Main+CTA&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

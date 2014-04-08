@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
 	/* Image Left Crop Pattern CSS */
     @media only screen and (max-width: 599px) {
         div[class="pattern"] {
@@ -73,6 +73,7 @@
 	<img src="steve-mcqueen.jpg" alt="Steve Mcqueen" width="600" height="348" style="display: block; border: 0;" />
 </div>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -85,6 +86,34 @@
     <section class="pattern-desc">
     	<h1>Image Left Crop</h1>
     	<p>An image that stays it's original size and is cropped from the left as the width of it's parent container changes.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+	&#x2F;* Image Left Crop Pattern CSS *&#x2F;
+    @media only screen and (max-width: 599px) {
+        div[class=&quot;pattern&quot;] {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			height: 348px;
+        }
+        div[class=&quot;pattern&quot;] img {
+        	position: absolute;
+        	top: 0;
+        	right: 0;
+        }
+    }
+&lt;&#x2F;style&gt;
+
+&lt;div class=&quot;pattern&quot;&gt;
+	&lt;img src=&quot;steve-mcqueen.jpg&quot; alt=&quot;Steve Mcqueen&quot; width=&quot;600&quot; height=&quot;348&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

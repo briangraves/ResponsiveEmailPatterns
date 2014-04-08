@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
 	/* Fluid Video Media Pattern CSS */
    @media only screen and (max-width: 599px) {
        div[class="pattern"] video,
@@ -74,6 +74,7 @@
   </video>
 </div>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -86,6 +87,35 @@
     <section class="pattern-desc">
     	<h1>Fluid Video</h1>
     	<p>An embedded HTML5 video that scales appropriately according to screen size. Will also fallback safely to a linked image for clients that don't support embedded video.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+	&#x2F;* Fluid Video Media Pattern CSS *&#x2F;
+   @media only screen and (max-width: 599px) {
+       div[class=&quot;pattern&quot;] video,
+       div[class=&quot;pattern&quot;] img
+       {
+           width: 100%;
+           height: auto !important;
+       }
+   }
+&lt;&#x2F;style&gt;
+
+&lt;div class=&quot;pattern&quot;&gt;
+  &lt;video style=&quot;padding: 0px; margin: 0px; display: block;&quot; poster=&quot;http:&#x2F;&#x2F;b.vimeocdn.com&#x2F;ts&#x2F;364&#x2F;865&#x2F;364865123_960.jpg&quot; controls=&quot;controls&quot; height=&quot;337&quot; width=&quot;600&quot;&gt;
+      &lt;source src=&quot;http:&#x2F;&#x2F;player.vimeo.com&#x2F;play_redirect?quality=hd&amp;amp;codecs=h264&amp;amp;clip_id=52861634&amp;amp;time=1361256207&amp;amp;sig=21d65c6cd03979983f6efa864c746c06&amp;amp;type=html5_desktop_local&quot;&gt;&lt;&#x2F;source&gt;
+      &lt;source type=&quot;video&#x2F;ogg&quot; src=&quot;&quot;&gt;&lt;&#x2F;source&gt;
+      &lt;source type=&quot;video&#x2F;webm&quot; src=&quot;&quot;&gt;&lt;&#x2F;source&gt;
+
+      &lt;a href=&quot;http:&#x2F;&#x2F;vimeo.com&#x2F;52861634&quot;&gt;&lt;img style=&quot;display: block;&quot; border=&quot;0&quot; src=&quot;connecting-fallback.jpg&quot; width=&quot;600&quot; height=&quot;337&quot; label=&quot;Fallback Image&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+  &lt;&#x2F;video&gt;
+&lt;&#x2F;div&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

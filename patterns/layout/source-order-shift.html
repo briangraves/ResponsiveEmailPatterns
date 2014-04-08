@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
 	/* Source Order Shift Layout Pattern CSS */
 	@media only screen and (max-width: 599px) {
         td[class="pattern"] .product_image img {
@@ -192,6 +192,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -204,6 +205,153 @@
     <section class="pattern-desc">
     	<h1>Source Order Shift</h1>
     	<p>A layout that starts as 2 equal width columns and ends as a single column layout, stacking the right column on top of the left as the screen sizes get narrower.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+	&#x2F;* Source Order Shift Layout Pattern CSS *&#x2F;
+	@media only screen and (max-width: 599px) {
+        td[class=&quot;pattern&quot;] .product_image img {
+            width: 100%;
+            height: auto !important;
+        }
+	}
+    @media only screen and (max-width: 460px) {
+        td[class=&quot;pattern&quot;] .product { padding: 20px !important; }
+        td[class=&quot;pattern&quot;] .product_description {
+            padding-right: 0 !important;
+            width: 100%;
+        }
+        td[class=&quot;pattern&quot;] .product_image { display: none; }
+        td[class=&quot;pattern&quot;] .product_image_small {
+            display: table-cell !important;
+            width: 100% !important;
+            height: auto !important;
+            max-height: inherit !important;
+            overflow: visible !important;
+            float: none !important;
+            padding-bottom: 10px;
+        }
+        td[class=&quot;pattern&quot;] .product_image_small img {
+            width: 100%;
+            display: block !important;
+        }
+    }
+&lt;&#x2F;style&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;pattern&quot; width=&quot;600&quot; style=&quot;background: #d8d8d8;&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;product&quot; style=&quot;padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 20px;&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;product_image_small&quot; style=&quot;display: none; width: 0; height: 0; max-height: 0; overflow: hidden; float: left;&quot;&gt;
+                                    &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;400x180&quot; alt=&quot;&quot; style=&quot;display: none; border: 0;&quot; &#x2F;&gt;
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;product_description&quot; width=&quot;285&quot; align=&quot;left&quot;&gt;
+                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 16px; color: #333; padding-right: 20px;&quot;&gt;
+                                                This is a Product Title&lt;br &#x2F;&gt;
+                                                &lt;strong style=&quot;font-size: 20px; color: #d21a22;&quot;&gt;$XXXX.XX&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                &lt;span style=&quot;font-size: 12px;&quot;&gt;product description here&lt;&#x2F;span&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                    &lt;&#x2F;table&gt;
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;product_image&quot; width=&quot;285&quot;&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;400x180&quot; width=&quot;285&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;product&quot; style=&quot;padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 20px;&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;product_image_small&quot; style=&quot;display: none; width: 0; height: 0; max-height: 0; overflow: hidden; float: left;&quot;&gt;
+                                    &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;400x180&quot; alt=&quot;&quot; style=&quot;display: none; border: 0;&quot; &#x2F;&gt;
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;product_description&quot; width=&quot;285&quot; align=&quot;left&quot;&gt;
+                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 16px; color: #333; padding-right: 20px;&quot;&gt;
+                                                This is a Product Title&lt;br &#x2F;&gt;
+                                                &lt;strong style=&quot;font-size: 20px; color: #d21a22;&quot;&gt;$XXXX.XX&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                &lt;span style=&quot;font-size: 12px;&quot;&gt;product description here&lt;&#x2F;span&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                    &lt;&#x2F;table&gt;
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;product_image&quot; width=&quot;285&quot;&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;400x180&quot; width=&quot;285&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;product&quot; style=&quot;padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 20px;&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;product_image_small&quot; style=&quot;display: none; width: 0; height: 0; max-height: 0; overflow: hidden; float: left;&quot;&gt;
+                                    &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;400x180&quot; alt=&quot;&quot; style=&quot;display: none; border: 0;&quot; &#x2F;&gt;
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;product_description&quot; width=&quot;285&quot; align=&quot;left&quot;&gt;
+                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 16px; color: #333; padding-right: 20px;&quot;&gt;
+                                                This is a Product Title&lt;br &#x2F;&gt;
+                                                &lt;strong style=&quot;font-size: 20px; color: #d21a22;&quot;&gt;$XXXX.XX&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                &lt;span style=&quot;font-size: 12px;&quot;&gt;product description here&lt;&#x2F;span&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                    &lt;&#x2F;table&gt;
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;product_image&quot; width=&quot;285&quot;&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;400x180&quot; width=&quot;285&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;product&quot; style=&quot;padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 20px;&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;product_image_small&quot; style=&quot;display: none; width: 0; height: 0; max-height: 0; overflow: hidden; float: left;&quot;&gt;
+                                    &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;400x180&quot; alt=&quot;&quot; style=&quot;display: none; border: 0;&quot; &#x2F;&gt;
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;product_description&quot; width=&quot;285&quot; align=&quot;left&quot;&gt;
+                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 16px; color: #333; padding-right: 20px;&quot;&gt;
+                                                This is a Product Title&lt;br &#x2F;&gt;
+                                                &lt;strong style=&quot;font-size: 20px; color: #d21a22;&quot;&gt;$XXXX.XX&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                &lt;span style=&quot;font-size: 12px;&quot;&gt;product description here&lt;&#x2F;span&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                    &lt;&#x2F;table&gt;
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;product_image&quot; width=&quot;285&quot;&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;400x180&quot; width=&quot;285&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

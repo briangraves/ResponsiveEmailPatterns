@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
 	/* List with Thumbnails V2 Pattern CSS */
 	@media only screen and (max-width: 599px) {
         td[class="pattern"] table { width: 100%; }
@@ -153,6 +153,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -165,6 +166,114 @@
     <section class="pattern-desc">
     	<h1>List With Thumbnails v2</h1>
     	<p>List items start out as a two column layout and stack to a single column. The thumbnail images also scale down as the screen size shrinks.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+	&#x2F;* List with Thumbnails V2 Pattern CSS *&#x2F;
+	@media only screen and (max-width: 599px) {
+        td[class=&quot;pattern&quot;] table { width: 100%; }
+        td[class=&quot;pattern&quot;] img {
+            width: 100%;
+            height: auto !important;
+        }
+        td[class=&quot;pattern&quot;] .col {
+            width: 48%;
+        }
+        td[class=&quot;pattern&quot;] .col:first-child {
+            margin-right: 4%;
+        }
+        td[class=&quot;pattern&quot;] .col td {
+            width: 70%;
+            padding-right: 0 !important;
+        }
+        td[class=&quot;pattern&quot;] .col td:first-child {
+            width: 30%;
+        }
+	}
+    @media only screen and (max-width: 520px) {
+        td[class=&quot;pattern&quot;] .col {
+            width: 100%;
+            display: block;
+            padding-bottom: 0 !important;
+            margin-bottom: 20px;
+        }
+        td[class=&quot;pattern&quot;] .col:first-child {
+            margin-right: 0;
+        }
+        td[class=&quot;pattern&quot;] .row:last-child .col:last-child { margin-bottom: 0; }
+    }
+&lt;&#x2F;style&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;pattern&quot; width=&quot;600&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                &lt;tr class=&quot;row&quot;&gt;
+                    &lt;td class=&quot;col&quot; valign=&quot;top&quot; width=&quot;300&quot; style=&quot;padding-bottom: 20px;&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;left&quot;&gt;
+                                    &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;120x120&#x2F;333333&amp;text=Thumbnail&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;
+                                &lt;&#x2F;td&gt;
+                                &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 16px; color: #333; padding: 0 16px;&quot;&gt;
+                                    &lt;strong style=&quot;line-height: 30px !important;&quot;&gt;Title of Content&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                    Summary of content
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;col&quot; valign=&quot;top&quot; width=&quot;300&quot; style=&quot;padding-bottom: 20px;&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;left&quot;&gt;
+                                    &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;120x120&#x2F;333333&amp;text=Thumbnail&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;
+                                &lt;&#x2F;td&gt;
+                                &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 16px; color: #333; padding: 0 0 0 16px;&quot;&gt;
+                                    &lt;strong style=&quot;line-height: 30px !important;&quot;&gt;Title of Content&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                    Summary of content
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr class=&quot;row&quot;&gt;
+                    &lt;td class=&quot;col&quot; width=&quot;300&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;left&quot;&gt;
+                                    &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;120x120&#x2F;333333&amp;text=Thumbnail&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;
+                                &lt;&#x2F;td&gt;
+                                &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 16px; color: #333; padding: 0 16px;&quot;&gt;
+                                    &lt;strong style=&quot;line-height: 30px !important;&quot;&gt;Title of Content&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                    Summary of content
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;col&quot; width=&quot;300&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;left&quot;&gt;
+                                    &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;120x120&#x2F;333333&amp;text=Thumbnail&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;
+                                &lt;&#x2F;td&gt;
+                                &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 16px; color: #333; padding: 0 0 0 16px;&quot;&gt;
+                                    &lt;strong style=&quot;line-height: 30px !important;&quot;&gt;Title of Content&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                    Summary of content
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

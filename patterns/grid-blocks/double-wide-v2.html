@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
 	/* Double Wide v2 Pattern CSS */
 	@media only screen and (max-width: 599px) {
         td[class="grid-block"] table { width: 100%; }
@@ -169,6 +169,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -181,6 +182,130 @@
     <section class="pattern-desc">
     	<h1>Double Wide v2</h1>
     	<p>A grid block that reflows as appropriate as the screen size shrinks.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+	&#x2F;* Double Wide v2 Pattern CSS *&#x2F;
+	@media only screen and (max-width: 599px) {
+        td[class=&quot;grid-block&quot;] table { width: 100%; }
+        td[class=&quot;grid-block&quot;] .spacer { display: none; }
+        td[class=&quot;grid-block&quot;] .row { padding: 0 !important; }
+        td[class=&quot;grid-block&quot;] .section {
+            display: block;
+            float: left;
+            height: auto;
+            padding: 60px 20px;
+            margin-bottom: 8px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        td[class=&quot;grid-block&quot;] .section.half {
+            width: 49%;
+        }
+        td[class=&quot;grid-block&quot;] .section.half:first-child { margin-right: 2%; }
+        td[class=&quot;grid-block&quot;] .section.full {
+            width: 100%;
+        }
+	}
+    @media only screen and (max-width: 400px) {
+        td[class=&quot;grid-block&quot;] .section.half {
+            width: 100%;
+        }
+        td[class=&quot;grid-block&quot;] .section.half:first-child { margin-right: 0; }
+    }
+&lt;&#x2F;style&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;grid-block&quot; width=&quot;600&quot; style=&quot;padding-bottom: 8px;&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;row&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;section half&quot; width=&quot;144&quot; height=&quot;144&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;&quot;&gt;
+                                    1
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;spacer&quot; width=&quot;8&quot; style=&quot;font-size: 1px;&quot;&gt;&amp;nbsp;&lt;&#x2F;td&gt;
+                                &lt;td class=&quot;section half&quot; width=&quot;144&quot; height=&quot;144&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;&quot;&gt;
+                                    2
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;spacer&quot; width=&quot;8&quot; style=&quot;font-size: 1px;&quot;&gt;&amp;nbsp;&lt;&#x2F;td&gt;
+                                &lt;td class=&quot;section full&quot; width=&quot;296&quot; height=&quot;144&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;&quot;&gt;
+                                    3
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;row&quot; style=&quot;padding-top: 8px;&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;section half&quot; width=&quot;296&quot; height=&quot;144&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;&quot;&gt;
+                                    4
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;spacer&quot; width=&quot;8&quot; style=&quot;font-size: 1px;&quot;&gt;&amp;nbsp;&lt;&#x2F;td&gt;
+                                &lt;td class=&quot;section half&quot; width=&quot;144&quot; height=&quot;144&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;&quot;&gt;
+                                    5
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;spacer&quot; width=&quot;8&quot; style=&quot;font-size: 1px;&quot;&gt;&amp;nbsp;&lt;&#x2F;td&gt;
+                                &lt;td class=&quot;section full&quot; width=&quot;144&quot; height=&quot;144&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;&quot;&gt;
+                                    6
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;row&quot; style=&quot;padding-top: 8px;&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;section half&quot; width=&quot;144&quot; height=&quot;144&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;&quot;&gt;
+                                    7
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;spacer&quot; width=&quot;8&quot; style=&quot;font-size: 1px;&quot;&gt;&amp;nbsp;&lt;&#x2F;td&gt;
+                                &lt;td class=&quot;section half&quot; width=&quot;144&quot; height=&quot;144&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;&quot;&gt;
+                                    8
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;spacer&quot; width=&quot;8&quot; style=&quot;font-size: 1px;&quot;&gt;&amp;nbsp;&lt;&#x2F;td&gt;
+                                &lt;td class=&quot;section full&quot; width=&quot;296&quot; height=&quot;144&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;&quot;&gt;
+                                    9
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;row&quot; style=&quot;padding-top: 8px;&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;section half&quot; width=&quot;296&quot; height=&quot;144&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;&quot;&gt;
+                                    10
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;spacer&quot; width=&quot;8&quot; style=&quot;font-size: 1px;&quot;&gt;&amp;nbsp;&lt;&#x2F;td&gt;
+                                &lt;td class=&quot;section half&quot; width=&quot;144&quot; height=&quot;144&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;&quot;&gt;
+                                    11
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;spacer&quot; width=&quot;8&quot; style=&quot;font-size: 1px;&quot;&gt;&amp;nbsp;&lt;&#x2F;td&gt;
+                                &lt;td class=&quot;section full&quot; width=&quot;144&quot; height=&quot;144&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;&quot;&gt;
+                                    12
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

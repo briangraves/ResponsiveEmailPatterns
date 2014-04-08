@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style type="text/css" media="screen">
+
+                <style>
     /* Column Drop Layout Pattern CSS */
 	@media only screen and (max-width: 450px) {
 	    td[class="column"] {
@@ -89,6 +89,9 @@
     </tr>
 </table>
 
+
+
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -101,6 +104,52 @@
     <section class="pattern-desc">
     	<h1>Column Drop</h1>
     	<p>A multi-column layout that ends up as a single column layout, dropping columns along the way as the screen sizes get narrower.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+    &#x2F;* Column Drop Layout Pattern CSS *&#x2F;
+	@media only screen and (max-width: 450px) {
+	    td[class=&quot;column&quot;] {
+	        display: block;
+            width: 100%;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+	    }
+	}
+&lt;&#x2F;style&gt;
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;column&quot; width=&quot;600&quot; colspan=&quot;2&quot; align=&quot;left&quot; valign=&quot;top&quot; style=&quot;padding: 10px 20px 20px 20px; background: #999; font-family: arial,sans-serif; font-size: 14px; line-height: 18px; color: #000001;&quot;&gt;
+        	&lt;h1&gt;Column 1&lt;&#x2F;h1&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
+            &lt;&#x2F;p&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;column&quot; width=&quot;300&quot; align=&quot;left&quot; valign=&quot;top&quot; style=&quot;padding: 20px; background: #666; font-family: arial,sans-serif; font-size: 14px; line-height: 18px; color: #fff;&quot;&gt;
+            &lt;h2 style=&quot;border: 0;&quot;&gt;Column 2&lt;&#x2F;h2&gt;
+            &lt;p&gt;
+                Nunc tempus felis vitae urna. Vivamus porttitor, neque at volutpat rutrum, purus nisi eleifend libero, a tempus libero lectus feugiat felis. Morbi diam mauris, viverra in, gravida eu, mattis in, ante. Morbi eget arcu. Morbi porta, libero id ullamcorper nonummy, nibh ligula pulvinar metus, eget consectetuer augue nisi quis lacus. Ut ac mi quis lacus mollis aliquam. Curabitur iaculis tempus eros. Curabitur vel mi sit amet magna malesuada ultrices. Ut nisi erat, fermentum vel, congue id, euismod in, elit. Fusce ultricies, orci ac feugiat suscipit, leo massa sodales velit, et scelerisque mi tortor at ipsum. Proin orci odio, commodo ac, gravida non, tristique vel, tellus. Pellentesque nibh libero, ultricies eu, sagittis non, mollis sed, justo. Praesent metus ipsum, pulvinar pulvinar, porta id, fringilla at, est.
+            &lt;&#x2F;p&gt;
+        &lt;&#x2F;td&gt;
+        &lt;td class=&quot;column&quot; width=&quot;300&quot; align=&quot;left&quot; valign=&quot;top&quot; style=&quot;padding: 20px; background: #333; color: #fff; font-family: arial,sans-serif; font-size: 14px; line-height: 18px;&quot;&gt;
+            &lt;h2 style=&quot;border: 0;&quot;&gt;Column 3&lt;&#x2F;h2&gt;
+            &lt;p&gt;
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In posuere felis nec tortor. Pellentesque faucibus. Ut accumsan ultricies elit. Maecenas at justo id velit placerat molestie. Donec dictum lectus non odio. Cras a ante vitae enim iaculis aliquam. Mauris nunc quam, venenatis nec, euismod sit amet, egestas placerat, est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras id elit. Integer quis urna. Ut ante enim, dapibus malesuada, fringilla eu, condimentum quis, tellus. Aenean porttitor eros vel dolor. Donec convallis pede venenatis nibh. Duis quam. Nam eget lacus. Aliquam erat volutpat. Quisque dignissim congue leo.
+            &lt;&#x2F;p&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+
+
+            </code>
+        </pre>
     </section>
 
             </div>

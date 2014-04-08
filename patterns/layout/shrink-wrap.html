@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
 	/* Shrink Wrap Layout Pattern CSS */
 	@media only screen and (max-width: 599px) {
         td[class="hero"] img {
@@ -94,6 +94,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -106,6 +107,55 @@
     <section class="pattern-desc">
     	<h1>Shrink Wrap</h1>
     	<p>The simplesest layout is one that is mostly fluid. The layout does not shift with screen size changes. Text simply reflows and images scale.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+	&#x2F;* Shrink Wrap Layout Pattern CSS *&#x2F;
+	@media only screen and (max-width: 599px) {
+        td[class=&quot;hero&quot;] img {
+            width: 100%;
+            height: auto !important;
+        }
+	    td[class=&quot;pattern&quot;] td{
+	        width: 100%;
+	    }
+	}
+&lt;&#x2F;style&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;pattern&quot; width=&quot;600&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;hero&quot;&gt;
+                        &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;600x200&amp;text=Hero+Image&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; color: #333;&quot;&gt;
+                        &lt;h1&gt;Header Text&lt;&#x2F;h1&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; line-height: 20px !important; color: #666; padding-bottom: 20px;&quot;&gt;
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;left&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;200x50&#x2F;333&amp;text=CTA+»&quot; alt=&quot;CTA&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

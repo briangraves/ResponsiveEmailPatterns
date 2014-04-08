@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
     .main_cta img { width: 100%; height: auto !important; }
 
     /* Reduce Navigation Pattern CSS */
@@ -106,6 +106,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -118,6 +119,67 @@
     <section class="pattern-desc">
     	<h1>Reduce</h1>
     	<p>Navigation begins as a single row at the top of the layout and specific items are removed as the viewport shrinks.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+    .main_cta img { width: 100%; height: auto !important; }
+
+    &#x2F;* Reduce Navigation Pattern CSS *&#x2F;
+    @media only screen and (max-width: 400px) {
+        td[class=&quot;nav3&quot;] { display: none; }
+    }
+    @media only screen and (max-width: 465px) {
+        td[class=&quot;nav4&quot;] { display: none; }
+        td[class=&quot;main_nav&quot;] td { padding: 20px !important; }
+    }
+    @media only screen and (max-width: 500px) {
+        td[class=&quot;nav5&quot;] { display: none; }
+        td[class=&quot;main_nav&quot;] td { font-size: 14px !important; }
+    }
+    @media only screen and (max-width: 599px) {
+        td[class=&quot;nav6&quot;] { display: none; }
+    }
+&lt;&#x2F;style&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;main_nav&quot; width=&quot;600&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;center&quot; style=&quot;padding: 15px 10px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                        &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Navigation 1&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td align=&quot;center&quot; style=&quot;padding: 15px 10px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                        &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Navigation 2&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;nav3&quot; align=&quot;center&quot; style=&quot;padding: 15px 10px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                        &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Navigation 3&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;nav4&quot; align=&quot;center&quot; style=&quot;padding: 15px 10px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                        &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Navigation 4&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;nav5&quot; align=&quot;center&quot; style=&quot;padding: 15px 10px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                        &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Navigation 5&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;nav6&quot; align=&quot;center&quot; style=&quot;padding: 15px 10px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                        &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Navigation 6&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;main_cta&quot; style=&quot;padding-bottom: 10px;&quot;&gt;
+            &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;600x300&amp;text=Main+CTA&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

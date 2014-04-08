@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
 	/* 2 equal-width columns Layout Pattern CSS */
 	@media only screen and (max-width: 599px) {
         td[class="pattern"] table { width: 100%; }
@@ -171,6 +171,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -183,6 +184,132 @@
     <section class="pattern-desc">
     	<h1>2 Equal Width Columns</h1>
     	<p>A layout that starts as 2 equal width columns and ends as a single column layout, stacking the left column on top of the right as the screen sizes get narrower.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+	&#x2F;* 2 equal-width columns Layout Pattern CSS *&#x2F;
+	@media only screen and (max-width: 599px) {
+        td[class=&quot;pattern&quot;] table { width: 100%; }
+        td[class=&quot;pattern&quot;] img {
+            width: 100%;
+            height: auto !important;
+        }
+	    td[class=&quot;pattern&quot;] .col{
+	        width: 50%;
+	    }
+	}
+    @media only screen and (max-width: 450px) {
+        td[class=&quot;pattern&quot;] .col{
+            width: 100%;
+            display: block;
+        }
+        td[class=&quot;pattern&quot;] .col1{
+            margin-bottom: 16px;
+        }
+        td[class=&quot;pattern&quot;] .description span {
+            display: block;
+            max-width: 300px;
+        }
+    }
+&lt;&#x2F;style&gt;
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;pattern&quot; width=&quot;600&quot; align=&quot;center&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td style=&quot;background: #eee; padding: 20px 0;&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;col col1&quot; width=&quot;300&quot; align=&quot;center&quot;&gt;
+                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td style=&quot;padding: 0 10px;&quot;&gt;
+                                                &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td align=&quot;center&quot; style=&quot;font-family: arial,sans-serif; font-size: 22px; color: #000; padding-bottom: 8px;&quot;&gt;
+                                                            This is a Headline
+                                                        &lt;&#x2F;td&gt;
+                                                    &lt;&#x2F;tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td class=&quot;description&quot; align=&quot;center&quot; style=&quot;font-family: arial,sans-serif; font-size: 12px; color: #333; padding-bottom: 8px;&quot;&gt;
+                                                            &lt;span&gt;Neyla of indie band The Lumineers swings by our office to meet her namesake dress!&lt;&#x2F;span&gt;
+                                                        &lt;&#x2F;td&gt;
+                                                    &lt;&#x2F;tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td align=&quot;center&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; font-weight: bold; color: #000&quot;&gt;
+                                                            &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #000;&quot;&gt;Check It Out »&lt;&#x2F;a&gt;
+                                                        &lt;&#x2F;td&gt;
+                                                    &lt;&#x2F;tr&gt;
+                                                &lt;&#x2F;table&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                    &lt;&#x2F;table&gt;
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;col&quot; width=&quot;300&quot; align=&quot;center&quot;&gt;
+                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;center&quot; style=&quot;padding: 0 10px;&quot;&gt;
+                                                &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;400x110&amp;text=Image&quot; width=&quot;300&quot; alt=&quot;&quot; style=&quot;display: block;&quot; &#x2F;&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                    &lt;&#x2F;table&gt;
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr&gt;
+                    &lt;td style=&quot;background: #eee; padding: 20px 0;&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;col col1&quot; width=&quot;300&quot; align=&quot;center&quot;&gt;
+                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td style=&quot;padding: 0 10px;&quot;&gt;
+                                                &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td align=&quot;center&quot; style=&quot;font-family: arial,sans-serif; font-size: 22px; color: #000; padding-bottom: 8px;&quot;&gt;
+                                                            This is a Headline
+                                                        &lt;&#x2F;td&gt;
+                                                    &lt;&#x2F;tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td class=&quot;description&quot; align=&quot;center&quot; style=&quot;font-family: arial,sans-serif; font-size: 12px; color: #333; padding-bottom: 8px;&quot;&gt;
+                                                            &lt;span&gt;Neyla of indie band The Lumineers swings by our office to meet her namesake dress!&lt;&#x2F;span&gt;
+                                                        &lt;&#x2F;td&gt;
+                                                    &lt;&#x2F;tr&gt;
+                                                    &lt;tr&gt;
+                                                        &lt;td align=&quot;center&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; font-weight: bold; color: #000&quot;&gt;
+                                                            &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #000;&quot;&gt;Check It Out »&lt;&#x2F;a&gt;
+                                                        &lt;&#x2F;td&gt;
+                                                    &lt;&#x2F;tr&gt;
+                                                &lt;&#x2F;table&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                    &lt;&#x2F;table&gt;
+                                &lt;&#x2F;td&gt;
+                                &lt;td class=&quot;col&quot; width=&quot;300&quot; align=&quot;center&quot;&gt;
+                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;center&quot; style=&quot;padding: 0 10px;&quot;&gt;
+                                                &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;400x110&amp;text=Image&quot; width=&quot;300&quot; alt=&quot;&quot; style=&quot;display: block;&quot; &#x2F;&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                    &lt;&#x2F;table&gt;
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

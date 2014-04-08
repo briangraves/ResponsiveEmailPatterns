@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
 	/* Image Vertical Crop Pattern CSS */
     @media only screen and (max-width: 599px) {
         div[class="pattern"] {
@@ -90,6 +90,7 @@
 	<img src="michael-jordan.jpg" alt="Michael Jordan" width="600" height="450" style="display: block; border: 0;" />
 </div>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -102,6 +103,51 @@
     <section class="pattern-desc">
     	<h1>Image Vertical Crop</h1>
     	<p>An image that stays it's original size and is simply cropped from the bottom as the height of the screen gets shorter.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+	&#x2F;* Image Vertical Crop Pattern CSS *&#x2F;
+    @media only screen and (max-width: 599px) {
+        div[class=&quot;pattern&quot;] {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+            -webkit-transition: height .5s ease-out;
+            -moz-transition: height .5s ease-out;
+            -ms-transition: height .5s ease-out;
+            -o-transition: height .5s ease-out;
+            transition: height .5s ease-out;
+        }
+        div[class=&quot;pattern&quot;] img {
+        	position: absolute;
+        	top: 0;
+        	left: 50%;
+        	margin-left: -300px;
+        }
+    }
+    @media only screen and (max-width: 599px) and (max-height: 700px) {
+        div[class=&quot;pattern&quot;] { height: 360px !important; }
+        div[class=&quot;pattern&quot;] img { top: -26px; }
+    }
+    @media only screen and (max-width: 599px) and (max-height: 600px) {
+        div[class=&quot;pattern&quot;] { height: 260px !important; }
+        div[class=&quot;pattern&quot;] img { top: -26px; }
+    }
+    @media only screen and (max-width: 599px) and (max-height: 500px) {
+        div[class=&quot;pattern&quot;] { height: 200px !important; }
+        div[class=&quot;pattern&quot;] img { top: -20px; }
+    }
+&lt;&#x2F;style&gt;
+
+&lt;div class=&quot;pattern&quot; style=&quot;height: 450px;&quot;&gt;
+	&lt;img src=&quot;michael-jordan.jpg&quot; alt=&quot;Michael Jordan&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

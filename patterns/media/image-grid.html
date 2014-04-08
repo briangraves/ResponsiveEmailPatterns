@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
 	/* Fluid Image Grid Pattern CSS */
     @media only screen and (max-width: 599px) {
         td[class="pattern-grid"] img{
@@ -100,6 +100,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -112,6 +113,61 @@
     <section class="pattern-desc">
     	<h1>Image Grid</h1>
     	<p>A grid of equal size images that scale equaly as the viewport width changes.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+	&#x2F;* Fluid Image Grid Pattern CSS *&#x2F;
+    @media only screen and (max-width: 599px) {
+        td[class=&quot;pattern-grid&quot;] img{
+            width: 100% !important;
+            height: auto !important;
+        }
+        td[class=&quot;pattern-grid&quot;] td {
+            display: block;
+            float: left;
+            width: 25%;
+        }
+    }
+    @media only screen and (max-width: 520px) {
+        td[class=&quot;grid&quot;] td { width: 50%; }
+    }
+    @media only screen and (max-width: 350px) {
+        td[class=&quot;grid&quot;] td { width: 100%; }
+    }
+&lt;&#x2F;style&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;pattern-grid&quot; width=&quot;600&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placesheen.com&#x2F;300&#x2F;240&quot; alt=&quot;Charlie Sheen&quot; width=&quot;150&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                    &lt;td&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placesheen.com&#x2F;300&#x2F;240&quot; alt=&quot;Charlie Sheen&quot; width=&quot;150&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                    &lt;td&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placesheen.com&#x2F;300&#x2F;240&quot; alt=&quot;Charlie Sheen&quot; width=&quot;150&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                    &lt;td&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placesheen.com&#x2F;300&#x2F;240&quot; alt=&quot;Charlie Sheen&quot; width=&quot;150&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placesheen.com&#x2F;300&#x2F;240&quot; alt=&quot;Charlie Sheen&quot; width=&quot;150&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                    &lt;td&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placesheen.com&#x2F;300&#x2F;240&quot; alt=&quot;Charlie Sheen&quot; width=&quot;150&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                    &lt;td&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placesheen.com&#x2F;300&#x2F;240&quot; alt=&quot;Charlie Sheen&quot; width=&quot;150&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                    &lt;td&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placesheen.com&#x2F;300&#x2F;240&quot; alt=&quot;Charlie Sheen&quot; width=&quot;150&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placesheen.com&#x2F;300&#x2F;240&quot; alt=&quot;Charlie Sheen&quot; width=&quot;150&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                    &lt;td&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placesheen.com&#x2F;300&#x2F;240&quot; alt=&quot;Charlie Sheen&quot; width=&quot;150&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                    &lt;td&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placesheen.com&#x2F;300&#x2F;240&quot; alt=&quot;Charlie Sheen&quot; width=&quot;150&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                    &lt;td&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placesheen.com&#x2F;300&#x2F;240&quot; alt=&quot;Charlie Sheen&quot; width=&quot;150&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

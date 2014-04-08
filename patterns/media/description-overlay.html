@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
   /* Description Overlay Pattern CSS */
    @media only screen and (max-width: 599px) {
             table { width: 100%; }
@@ -105,6 +105,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -117,6 +118,66 @@
     <section class="pattern-desc">
     	<h1>Description Overlay</h1>
     	<p>An image with a description overlayed on top. As the screen size narrows the image scales and the text in the description container reflows.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+  &#x2F;* Description Overlay Pattern CSS *&#x2F;
+   @media only screen and (max-width: 599px) {
+            table { width: 100%; }
+            td[class=container] {
+                background-size: auto 100%;
+                background-position: center top;
+                width: 100%;
+                height: auto;
+                min-height: 200px;
+                padding-top: 100px !important;
+            }
+            td[class=spacer] { display: none; height: 0;}
+        }
+&lt;&#x2F;style&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;container&quot; background=&quot;http:&#x2F;&#x2F;www.fillmurray.com&#x2F;600&#x2F;300&quot; width=&quot;600&quot; height=&quot;300&quot; style=&quot;background-position: center top;&quot;&gt;
+          &lt;!--[if gte mso 9]&gt;
+          &lt;v:rect xmlns:v=&quot;urn:schemas-microsoft-com:vml&quot; fill=&quot;true&quot; stroke=&quot;false&quot; style=&quot;width:600px;height:300px;&quot;&gt;
+            &lt;v:fill type=&quot;tile&quot; src=&quot;http:&#x2F;&#x2F;www.fillmurray.com&#x2F;600&#x2F;300&quot; color=&quot;#ff0000&quot; &#x2F;&gt;
+            &lt;v:textbox inset=&quot;0,0,0,0&quot;&gt;
+          &lt;![endif]--&gt;
+          &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+              &lt;tr&gt;
+                  &lt;td class=&quot;spacer&quot; height=&quot;150&quot;&gt;&amp;nbsp;&lt;&#x2F;td&gt;
+              &lt;&#x2F;tr&gt;
+              &lt;tr&gt;
+                  &lt;td class=&quot;inner-container&quot; width=&quot;600&quot; height=&quot;150&quot; align=&quot;left&quot; valign=&quot;top&quot; style=&quot;background-color: #ccc; background: rgba(30,30,30,0.7);&quot;&gt;
+                      &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                          &lt;tr&gt;
+                              &lt;td align=&quot;left&quot; style=&quot;padding: 14px 16px 10px 16px; font-family: arial,sans-serif; font-size: 16px; line-height: 22px; color: #fff;&quot;&gt;
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, nisi, quis, at, magnam magni maiores pariatur eos ullam consectetur excepturi alias sed! Debitis, iusto, minima atque reiciendis in aut eaque!
+                              &lt;&#x2F;td&gt;
+                          &lt;&#x2F;tr&gt;
+                          &lt;tr&gt;
+                              &lt;td align=&quot;right&quot; style=&quot;padding: 0 16px 14px 16px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;&quot;&gt;
+                                  &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #fff; display: block; padding: 0 5px; width: 100px; text-align: center; line-height: 40px; background: teal;&quot;&gt;CTA &gt;&lt;&#x2F;a&gt;
+                              &lt;&#x2F;td&gt;
+                          &lt;&#x2F;tr&gt;
+                      &lt;&#x2F;table&gt;
+                  &lt;&#x2F;td&gt;
+              &lt;&#x2F;tr&gt;
+          &lt;&#x2F;table&gt;
+          &lt;!--[if gte mso 9]&gt;
+            &lt;&#x2F;v:textbox&gt;
+          &lt;&#x2F;v:rect&gt;
+          &lt;![endif]--&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

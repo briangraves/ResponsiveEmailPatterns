@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
     /* 3 equal-width columns Layout Pattern CSS */
     @media only screen and (max-width: 599px) {
         td[class="pattern"] table { width: 100%; }
@@ -192,6 +192,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -204,6 +205,153 @@
     <section class="pattern-desc">
     	<h1>3 Equal Width Columns</h1>
     	<p>A layout that starts as 3 equal width columns and ends as a single column layout, stacking columns from left to right as the screen sizes get narrower.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+    &#x2F;* 3 equal-width columns Layout Pattern CSS *&#x2F;
+    @media only screen and (max-width: 599px) {
+        td[class=&quot;pattern&quot;] table { width: 100%; }
+        td[class=&quot;pattern&quot;] .col{
+            width: 33%;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        td[class=&quot;pattern&quot;] .col{
+            width: 100%;
+            display: block;
+        }
+        td[class=&quot;pattern&quot;] .col-left,
+        td[class=&quot;pattern&quot;] .col-mid {
+            margin-bottom: 20px;
+        }
+    }
+&lt;&#x2F;style&gt;
+
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;pattern&quot; width=&quot;600&quot; align=&quot;center&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;col col-left&quot; width=&quot;200&quot; align=&quot;left&quot; valign=&quot;top&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;left&quot; style=&quot;padding: 0 10px;&quot;&gt;
+                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: georgia,serif; font-size: 26px; font-weight: bold; text-transform: uppercase; color: #333;&quot;&gt;
+                                                Column One
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;&quot;&gt;
+                                                &lt;strong style=&quot;font-size: 16px;&quot;&gt;This is a headline&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br &#x2F;&gt;&lt;br &#x2F;&gt;
+                                                &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;&quot;&gt;Check It Out »&lt;&#x2F;a&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;&quot;&gt;
+                                                &lt;strong style=&quot;font-size: 16px;&quot;&gt;This is a headline&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br &#x2F;&gt;&lt;br &#x2F;&gt;
+                                                &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;&quot;&gt;Check It Out »&lt;&#x2F;a&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;&quot;&gt;
+                                                &lt;strong style=&quot;font-size: 16px;&quot;&gt;This is a headline&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br &#x2F;&gt;&lt;br &#x2F;&gt;
+                                                &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;&quot;&gt;Check It Out »&lt;&#x2F;a&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                    &lt;&#x2F;table&gt;
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;col col-mid&quot; width=&quot;200&quot; align=&quot;center&quot; valign=&quot;top&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;left&quot; style=&quot;padding: 0 10px;&quot;&gt;
+                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: georgia,serif; font-size: 26px; font-weight: bold; text-transform: uppercase; color: #333;&quot;&gt;
+                                                Column Two
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;&quot;&gt;
+                                                &lt;strong style=&quot;font-size: 16px;&quot;&gt;This is a headline&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br &#x2F;&gt;&lt;br &#x2F;&gt;
+                                                &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;&quot;&gt;Check It Out »&lt;&#x2F;a&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;&quot;&gt;
+                                                &lt;strong style=&quot;font-size: 16px;&quot;&gt;This is a headline&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br &#x2F;&gt;&lt;br &#x2F;&gt;
+                                                &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;&quot;&gt;Check It Out »&lt;&#x2F;a&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;&quot;&gt;
+                                                &lt;strong style=&quot;font-size: 16px;&quot;&gt;This is a headline&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br &#x2F;&gt;&lt;br &#x2F;&gt;
+                                                &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;&quot;&gt;Check It Out »&lt;&#x2F;a&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                    &lt;&#x2F;table&gt;
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;col&quot; width=&quot;200&quot; align=&quot;center&quot; valign=&quot;top&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;left&quot; style=&quot;padding: 0 10px;&quot;&gt;
+                                    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: georgia,serif; font-size: 26px; font-weight: bold; text-transform: uppercase; color: #333;&quot;&gt;
+                                                Column Three
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;&quot;&gt;
+                                                &lt;strong style=&quot;font-size: 16px;&quot;&gt;This is a headline&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br &#x2F;&gt;&lt;br &#x2F;&gt;
+                                                &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;&quot;&gt;Check It Out »&lt;&#x2F;a&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;&quot;&gt;
+                                                &lt;strong style=&quot;font-size: 16px;&quot;&gt;This is a headline&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br &#x2F;&gt;&lt;br &#x2F;&gt;
+                                                &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;&quot;&gt;Check It Out »&lt;&#x2F;a&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;&quot;&gt;
+                                                &lt;strong style=&quot;font-size: 16px;&quot;&gt;This is a headline&lt;&#x2F;strong&gt;&lt;br &#x2F;&gt;
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br &#x2F;&gt;&lt;br &#x2F;&gt;
+                                                &lt;a href=&quot;#&quot; style=&quot;text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;&quot;&gt;Check It Out »&lt;&#x2F;a&gt;
+                                            &lt;&#x2F;td&gt;
+                                        &lt;&#x2F;tr&gt;
+                                    &lt;&#x2F;table&gt;
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

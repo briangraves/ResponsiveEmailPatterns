@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,9 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
-    
+
+                <style>
     .main_cta img { width: 100%; height: auto !important; }
 
     /* Stacked Split Links Navigation Pattern CSS */
@@ -170,6 +169,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -182,6 +182,130 @@
     <section class="pattern-desc">
     	<h1>Stacked Split Links</h1>
     	<p>Navigation begins as a single row at the top of the layout. As screen size narrows, certain items drop from the top and move down to a stacked layout below the main message.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+    .main_cta img { width: 100%; height: auto !important; }
+
+    &#x2F;* Stacked Split Links Navigation Pattern CSS *&#x2F;
+    @media only screen and (max-width: 599px) {
+        table[class=pattern] .main_nav .nav_block1,
+        table[class=pattern] .main_nav .nav_block2,
+        table[class=pattern] .main_nav .nav_block3
+        {
+            padding-left: 20px !important;
+        }
+        table[class=pattern] .main_nav .nav_block1.first {
+            padding-left: 0 !important;
+        }
+        table[class=pattern] .sub_nav a {
+            display: block;
+            width: 100%;
+            padding: 16px 0;
+            border-bottom: 1px solid #cccccc;
+            color: #333333;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        table[class=pattern] .sub_nav tr:last-child a {
+            border-bottom: 0;
+        }
+    }
+    @media only screen and (max-width: 486px) {
+        table[class=pattern] .main_nav { padding: 20px 0 !important;}
+        table[class=pattern] .main_nav .nav_block1,
+        table[class=pattern] .main_nav .nav_block2
+        {
+            font-size: 14px !important;
+        }
+        table[class=pattern] .main_nav .nav_block3, table[class=pattern] .sub_nav .sub_nav_block2 { display: none; }
+        table[class=pattern] .sub_nav td { display: table-cell !important; width: auto !important; height: auto !important; max-height: auto !important; float: none !important; }
+        table[class=pattern] .sub_nav { padding: 0 12px; }
+    }
+    @media only screen and (max-width: 346px) {
+        table[class=pattern] .main_nav .nav_block1 { font-size: 16px !important; }
+        table[class=pattern] .main_nav .nav_block2 { display: none; }
+        table[class=pattern] .sub_nav .sub_nav_block2 { display: table-row; }
+    }
+&lt;&#x2F;style&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;pattern&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;main_nav&quot; width=&quot;600&quot; style=&quot;padding-top: 10px; padding-bottom: 10px;&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;nav_block1 first&quot; align=&quot;center&quot; style=&quot;font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 1&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;nav_block1&quot; align=&quot;center&quot; style=&quot;padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 2&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;nav_block1&quot; align=&quot;center&quot; style=&quot;padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 3&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;nav_block2&quot; align=&quot;center&quot; style=&quot;padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 4&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;nav_block2&quot; align=&quot;center&quot; style=&quot;padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 5&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;nav_block3&quot; align=&quot;center&quot; style=&quot;padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 6&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;nav_block3&quot; align=&quot;center&quot; style=&quot;padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 7&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;nav_block3&quot; align=&quot;center&quot; style=&quot;padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;&quot;&gt;
+                    	&lt;a href=&quot;#&quot; style=&quot;text-decoration: none; color: #999999;&quot;&gt;Nav 8&lt;&#x2F;a&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;main_cta&quot; style=&quot;padding-bottom: 10px;&quot;&gt;
+            &lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;600x300&amp;text=Main+CTA&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;sub_nav&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;
+                &lt;tr class=&quot;sub_nav_block2&quot;&gt;
+                	&lt;td style=&quot;display: none; width: 0; height: 0; overflow: hidden; float: left; font-size: 0;&quot;&gt;
+                		&lt;a href=&quot;#&quot;&gt;Nav 4&lt;&#x2F;a&gt;
+                	&lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr class=&quot;sub_nav_block2&quot;&gt;
+                	&lt;td style=&quot;display: none; width: 0; height: 0; overflow: hidden; float: left; font-size: 0;&quot;&gt;
+                		&lt;a href=&quot;#&quot;&gt;Nav 5&lt;&#x2F;a&gt;
+                	&lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr class=&quot;sub_nav_block3&quot;&gt;
+                	&lt;td style=&quot;display: none; width: 0; height: 0; overflow: hidden; float: left; font-size: 0;&quot;&gt;
+                		&lt;a href=&quot;#&quot;&gt;Nav 6&lt;&#x2F;a&gt;
+                	&lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr class=&quot;sub_nav_block3&quot;&gt;
+                	&lt;td style=&quot;display: none; width: 0; height: 0; overflow: hidden; float: left; font-size: 0;&quot;&gt;
+                		&lt;a href=&quot;#&quot;&gt;Nav 7&lt;&#x2F;a&gt;
+                	&lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+                &lt;tr class=&quot;sub_nav_block3&quot;&gt;
+                	&lt;td style=&quot;display: none; width: 0; height: 0; overflow: hidden; float: left; font-size: 0;&quot;&gt;
+                		&lt;a href=&quot;#&quot;&gt;Nav 8&lt;&#x2F;a&gt;
+                	&lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>

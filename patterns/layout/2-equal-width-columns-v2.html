@@ -22,12 +22,10 @@
 			<h1>Responsive Patterns</h1>
 		</a>
 
-			<!--
-			<a id="source" href="#" class="button source">
+			<!--<a id="source" href="#patternSource" class="button source">
 				<img src="../../images/source.svg" alt="" width="32" />
 				<h1>Source</h1>
-			</a>
-			-->
+			</a>-->
 			<a id="context" href="#" class="button context">
 				<img src="../../images/context.svg" alt="" width="20" />
 				<h1>Context</h1>
@@ -51,8 +49,10 @@
 				<a href="#">Navigation Item</a>
 			</div>
 		</div>
+        
 
-        <style>
+
+                <style>
 	/* 2 Equal-Width Columns V2 Layout Pattern CSS */
 	@media only screen and (max-width: 599px) {
         td[class="pattern"] table { width: 100%; }
@@ -124,6 +124,7 @@
     </tr>
 </table>
 
+
         <div class="pattern-footer">
         	<p>
         		This email was sent by: Your Company Here<br />
@@ -136,6 +137,85 @@
     <section class="pattern-desc">
     	<h1>2 Equal Width Columns v2</h1>
     	<p>A layout that starts as 2 equal width columns and ends as a single column layout, stacking the left column on top of the right as the screen sizes get narrower.</p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                        &lt;style&gt;
+	&#x2F;* 2 Equal-Width Columns V2 Layout Pattern CSS *&#x2F;
+	@media only screen and (max-width: 599px) {
+        td[class=&quot;pattern&quot;] table { width: 100%; }
+        td[class=&quot;pattern&quot;] .hero_image img {
+            width: 100%;
+            height: auto !important;
+        }
+	}
+    @media only screen and (max-width: 450px) {
+        td[class=&quot;pattern&quot;] .spacer { display: none; }
+        td[class=&quot;pattern&quot;] .col{
+            width: 100%;
+            display: block;
+        }
+        td[class=&quot;pattern&quot;] .col:first-child { margin-bottom: 30px; }
+        td[class=&quot;pattern&quot;] .hero_image img { width: 100%; }
+    }
+&lt;&#x2F;style&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;pattern&quot; width=&quot;600&quot; align=&quot;center&quot;&gt;
+            &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td class=&quot;col&quot; width=&quot;290&quot; valign=&quot;top&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;hero_image&quot;&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;450x150&quot; width=&quot;290&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;headline&quot; align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 22px; color: #333; padding-top: 15px;&quot;&gt;
+                                    This is a story headline
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;body_copy&quot; align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; line-height: 20px !important; color: #7f7f7f; padding-top: 10px;&quot;&gt;
+                                    Virtual computing via the cloud is all the rage these days but blade servers, which make up the bulk of the infrastructure for cloud computing systems, require specific fusing for high reliability and uptime. The Littelfuse 456 Series--- NANO2 Subminature Surface Mount Fuse - is perfect for this.
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;left&quot; style=&quot;padding-top: 15px;&quot;&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;118x34&#x2F;333&amp;text=Learn+More&quot; alt=&quot;Learn More&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                    &lt;td class=&quot;spacer&quot; width=&quot;20&quot; style=&quot;font-size: 1px;&quot;&gt;&amp;nbsp;&lt;&#x2F;td&gt;
+                    &lt;td class=&quot;col&quot; width=&quot;290&quot; valign=&quot;top&quot;&gt;
+                        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;hero_image&quot;&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;450x150&quot; width=&quot;290&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;headline&quot; align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 22px; color: #333; padding-top: 15px;&quot;&gt;
+                                    This is a story headline
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;body_copy&quot; align=&quot;left&quot; style=&quot;font-family: arial,sans-serif; font-size: 14px; line-height: 20px !important; color: #7f7f7f; padding-top: 10px;&quot;&gt;
+                                    Virtual computing via the cloud is all the rage these days but blade servers, which make up the bulk of the infrastructure for cloud computing systems, require specific fusing for high reliability and uptime. The Littelfuse 456 Series--- NANO2 Subminature Surface Mount Fuse - is perfect for this.
+                                &lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align=&quot;left&quot; style=&quot;padding-top: 15px;&quot;&gt;&lt;img src=&quot;http:&#x2F;&#x2F;placehold.it&#x2F;118x34&#x2F;333&amp;text=Learn+More&quot; alt=&quot;Learn More&quot; style=&quot;display: block; border: 0;&quot; &#x2F;&gt;&lt;&#x2F;td&gt;
+                            &lt;&#x2F;tr&gt;
+                        &lt;&#x2F;table&gt;
+                    &lt;&#x2F;td&gt;
+                &lt;&#x2F;tr&gt;
+            &lt;&#x2F;table&gt;
+        &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+            </code>
+        </pre>
     </section>
 
             </div>
