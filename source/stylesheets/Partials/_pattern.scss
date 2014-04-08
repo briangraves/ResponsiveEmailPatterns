@@ -10,18 +10,20 @@
 }
 
 .pattern-source {
-	margin: 2.5em auto 0;
+	margin: 1.5em auto 0;
 	pre[class*="language-"] {
 		margin: 0;
-		white-space: pre-line;
-		max-height: 20em;
-		background: whitesmoke;
+		padding: 0;
+		background: none;
 	}
 	code {
-		display: block;
-		overflow: scroll;
 		font-size: .9em;
-		max-height: 20em;
+		display: block;
+		margin: 0;
+		padding: 1.5em;
+		max-height: 22em;
+		overflow: scroll;
+		background: whitesmoke;
 	}
 }
 
