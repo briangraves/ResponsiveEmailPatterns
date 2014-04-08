@@ -1,0 +1,18 @@
+---
+title: Responsive Email Patterns
+layout: pattern
+pattern_name: "Basic Fluid Image"
+pattern_desc: "The simplest tactic for dealing with responsive images. The image is set to 100% of the width of it's container simply scales down as the screen size shrinks."
+---
+
+<style>
+	/* Basic Fluid Image Pattern CSS */
+    @media only screen and (max-width: 599px) {
+        img.pattern {
+            width: 100%;
+            height: auto !important;
+        }
+    }
+</style>
+
+<img class="pattern" src="michael-jordan.jpg" alt="Michael Jordan" width="600" height="450" style="display: block; border: 0;" />

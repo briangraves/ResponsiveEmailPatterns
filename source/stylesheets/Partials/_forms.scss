@@ -1,0 +1,94 @@
+label, input {
+	display: block;
+}
+
+label {
+	cursor: pointer;
+	margin-top: 1.5em;
+}
+
+select, 
+input[type=text],
+input[type=url],
+input[type=email] {
+	font-size: .8em;
+	width: 100%;
+	padding: .75em;
+	margin-top: .75em;
+	color: $color-text;
+}
+
+button,
+input[type=submit],
+.button {
+	display: inline-block;
+	padding: .5em 1em;
+	background: darken($color-link, 20%);
+	color: rgb(255,255,255);
+	border: 0;
+	&:hover {
+		color: rgb(255,255,255);
+		background: darken($color-link, 30%);
+	}
+}
+
+.form {
+	@include clearfix;
+	h1 { margin: 0; }
+	fieldset {
+		@include clearfix;
+		padding: 1em 0 3em 0;
+		margin: 0;
+		border: 0;
+		border-bottom: 1px solid lighten($color-text, 40%);
+		&:first-child {
+			padding-top: 0;
+		}
+
+		&:last-of-type { 
+			padding-bottom: 0;
+			border: 0; 
+		}
+	}
+	.submit {
+		clear: both;
+		padding: 3em 0 2em 0;
+	}
+}
+@media only screen and (min-width: 40em) {
+	.form {
+		h1 { padding: 0 1em; }
+		fieldset {
+			float: left;
+			width: 50%;
+			padding: 1em 2em;
+			border: 0;
+			&:first-child { padding-top: 1em; }
+		}
+		.submit {
+			padding: 2em;
+		}
+	}
+}
+@media only screen and (min-width: 60em) {
+	.form {
+		h1 { 
+			font-size: 3em; 
+			padding: 0 .65em;
+		}
+	}
+	button,
+	input[type=submit] {
+		font-size: 1.2em;
+	}
+	select, 
+	input[type=text],
+	input[type=url],
+	input[type=email] {
+		font-size: .8em;
+		width: 100%;
+		padding: .75em;
+		margin-top: .75em;
+		color: $color-text;
+	}
+}

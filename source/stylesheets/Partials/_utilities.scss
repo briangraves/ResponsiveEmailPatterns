@@ -1,0 +1,47 @@
+@mixin unset-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+@mixin animation($name, $duration, $timing-function: ease, $delay: 0, $iteration-count: 1, $direction: both) {
+	-o-animation: $name $duration $timing-function $delay $iteration-count $direction;
+	-moz-animation: $name $duration $timing-function $delay $iteration-count $direction;
+	-webkit-animation: $name $duration $timing-function $delay $iteration-count $direction;
+	animation: $name $duration $timing-function $delay $iteration-count $direction;
+}
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin destroyList {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li,
+    dd,
+    dt {
+        @include inline-block(middle);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@mixin destroyLinks {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,66 @@
+---
+title: Responsive Email Patterns
+layout: pattern
+pattern_name: "Full To Accordion"
+pattern_desc: "A container is used to truncate description text based on screen size. Once text has been truncated, a cta is used to allow for the truncated content to be viewed on request in accordion like approach."
+---
+
+<style>
+	/* Full to Accordion Pattern CSS */
+	@media only screen and (max-width: 450px) {
+	    table[class="pattern"] .story p {
+	        max-height: 0;
+            overflow: hidden;
+            margin: 0;
+	    }
+        table[class="pattern"] .story h1 a { display: block; position: relative; }
+        table[class="pattern"] .story h1 a:after {
+            content: '+';
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+        }
+        table[class="pattern"] #story1:target p,
+        table[class="pattern"] #story2:target p,
+        table[class="pattern"] #story3:target p {
+            max-height: 999px;
+            margin: 16px 0;
+            -webkit-transition: max-height 0.5s ease-out;
+            -moz-transition: max-height 0.5s ease-out;
+            -ms-transition: max-height 0.5s ease-out;
+            -o-transition: max-height 0.5s ease-out;
+            transition: max-height 0.5s ease-out;
+        }
+	}
+</style>
+
+<table cellpadding="0" cellspacing="0" class="pattern">
+    <tr>
+        <td class="story" id="story1" width="600" align="left" valign="top" style="border-bottom: 1px dotted #999; font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 0 0 16px 0;">
+        	<h1 style="margin: 0;"><a href="#story1" style="text-decoration: none; color: #333">Story 1</a></h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
+            </p>
+            <a class="readmore" href="#story1" style="display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0; color: #fff;">Read More</a>
+        </td>
+    </tr>
+    <tr>
+        <td class="story" id="story2" width="600" align="left" valign="top" style="border-bottom: 1px dotted #999; font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 16px 0;">
+            <h1 style="margin: 0;"><a href="#story2" style="text-decoration: none; color: #333">Story 2</a></h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
+            </p>
+            <a class="readmore" href="#story2" style="display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0; color: #fff;">Read More</a>
+        </td>
+    </tr>
+    <tr>
+        <td class="story" id="story3" width="600" align="left" valign="top" style="font-family: arial,sans-serif; font-size: 14px; color: #333; padding: 16px 0 0 0;">
+            <h1 style="margin: 0;"><a href="#story3" style="text-decoration: none; color: #333">Story 3</a></h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
+            </p>
+            <a class="readmore" href="#story3" style="display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0; color: #fff;">Read More</a>
+        </td>
+    </tr>
+</table>

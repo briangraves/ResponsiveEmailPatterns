@@ -1,8 +1,10 @@
 ---
-title: List with Thumbnails V2
+title: Responsive Email Patterns
+layout: pattern
+pattern_name: "List With Thumbnails v2"
+pattern_desc: "List items start out as a two column layout and stack to a single column. The thumbnail images also scale down as the screen size shrinks."
 ---
 
-<% content_for :css do %>
 <style>
 	/* List with Thumbnails V2 Pattern CSS */
 	@media only screen and (max-width: 599px) {
@@ -38,11 +40,10 @@ title: List with Thumbnails V2
         td[class="pattern"] .row:last-child .col:last-child { margin-bottom: 0; }
     }
 </style>
-<% end %>
 
 <table cellpadding="0" cellspacing="0">
     <tr>
-        <td width="600" style="padding: 30px 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+        <td class="pattern" width="600">
             <table cellpadding="0" cellspacing="0">
                 <tr class="row">
                     <td class="col" valign="top" width="300" style="padding-bottom: 20px;">

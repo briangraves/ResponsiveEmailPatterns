@@ -1,0 +1,42 @@
+<% wrap_layout :interior do %>
+    <section class="pattern-wrap">
+		<div class="pattern-header <% if current_page.data.type == "navigation" %>type-navigation<% end %>">
+			<div class="pattern-logo">
+				<a href="#"><img src="http://placehold.it/156x46&text=Logo" alt="" style="display: block; border: 0;" /></a>
+			</div>
+			<div class="pattern-nav">
+				<% 5.times do %>
+				<a href="#">Navigation Item</a>
+				<% end %>
+			</div>
+		</div>
+        
+
+        <% content_for :source do %>
+        <%= yield %>
+        <% end %>
+
+        <%= yield_content :source %>
+
+        <div class="pattern-footer">
+        	<p>
+        		This email was sent by: Your Company Here<br />
+        		4822 West 62nd Street Mission, KS 66205<br /><br />
+        		<a href="#" style="color: #999;">Preferences</a> | <a href="#" style="color: #999;">Unsubscribe</a>
+        	</p>
+		</div>
+    </section>
+
+    <section class="pattern-desc">
+    	<h1><%= current_page.data.pattern_name %></h1>
+    	<p><%= current_page.data.pattern_desc %></p>
+    </section>
+
+    <section id="patternSource" class="pattern-source">
+        <pre class="language-markup">
+            <code class="language-markup">
+                <%= escape_html(yield_content :source) %>
+            </code>
+        </pre>
+    </section>
+<% end %>

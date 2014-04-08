@@ -1,0 +1,57 @@
+---
+title: Responsive Email Patterns
+layout: pattern
+pattern_name: "Top Links"
+pattern_desc: "One of the easiest-to-implement solutions for navigation. Links stay at the top of the screen and wrap as the viewport shrinks. Can however cause height issues if too many links are used."
+type: "navigation"
+---
+<style>
+    .main_cta img { width: 100%; height: auto !important; }
+
+    /* Top Links Navigation Pattern CSS */
+    @media only screen and (max-width: 632px) {
+    	td[class="main_nav"] td {
+    		display: inline-block;
+    	}
+    }
+</style>
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="main_nav" width="600">
+            <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center" style="padding: 15px 40px 15px 0; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 1</a>
+                    </td>
+                    <td align="center" style="padding: 15px 40px 15px 0; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 2</a>
+                    </td>
+                    <td align="center" style="padding: 15px 40px 15px 0; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 3</a>
+                    </td>
+                    <td align="center" style="padding: 15px 40px 15px 0; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 4</a>
+                    </td>
+                    <td align="center" style="padding: 15px 40px 15px 0; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 5</a>
+                    </td>
+                    <td align="center" style="padding: 15px 40px 15px 0; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 6</a>
+                    </td>
+                    <td align="center" style="padding: 15px 40px 15px 0; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 7</a>
+                    </td>
+                    <td align="center" style="padding: 15px 0 15px 0; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 8</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="main_cta">
+            <img src="http://placehold.it/600x300&text=Main+CTA" alt="" style="display: block; border: 0;" />
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,72 @@
+---
+title: Responsive Email Patterns
+layout: pattern
+pattern_name: "Source Order Shift"
+pattern_desc: "A layout that starts as 2 equal width columns and ends as a single column layout, stacking the right column on top of the left as the screen sizes get narrower."
+---
+<style>
+	/* Source Order Shift Layout Pattern CSS */
+	@media only screen and (max-width: 599px) {
+        td[class="pattern"] .product_image img {
+            width: 100%;
+            height: auto !important;
+        }
+	}
+    @media only screen and (max-width: 460px) {
+        td[class="pattern"] .product { padding: 20px !important; }
+        td[class="pattern"] .product_description {
+            padding-right: 0 !important;
+            width: 100%;
+        }
+        td[class="pattern"] .product_image { display: none; }
+        td[class="pattern"] .product_image_small {
+            display: table-cell !important;
+            width: 100% !important;
+            height: auto !important;
+            max-height: inherit !important;
+            overflow: visible !important;
+            float: none !important;
+            padding-bottom: 10px;
+        }
+        td[class="pattern"] .product_image_small img {
+            width: 100%;
+            display: block !important;
+        }
+    }
+</style>
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="pattern" width="600" style="background: #d8d8d8;">
+            <table cellpadding="0" cellspacing="0">
+                <% 4.times do %>
+                <tr>
+                    <td class="product" style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 20px;">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="product_image_small" style="display: none; width: 0; height: 0; max-height: 0; overflow: hidden; float: left;">
+                                    <img src="http://placehold.it/400x180" alt="" style="display: none; border: 0;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product_description" width="285" align="left">
+                                    <table cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="left" style="font-family: arial,sans-serif; font-size: 16px; color: #333; padding-right: 20px;">
+                                                This is a Product Title<br />
+                                                <strong style="font-size: 20px; color: #d21a22;">$XXXX.XX</strong><br />
+                                                <span style="font-size: 12px;">product description here</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="product_image" width="285"><img src="http://placehold.it/400x180" width="285" alt="" style="display: block; border: 0;" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <% end %>
+            </table>
+        </td>
+    </tr>
+</table>

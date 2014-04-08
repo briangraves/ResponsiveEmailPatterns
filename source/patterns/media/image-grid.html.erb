@@ -1,0 +1,43 @@
+---
+title: Responsive Email Patterns
+layout: pattern
+pattern_name: "Image Grid"
+pattern_desc: "A grid of equal size images that scale equaly as the viewport width changes."
+---
+
+<style>
+	/* Fluid Image Grid Pattern CSS */
+    @media only screen and (max-width: 599px) {
+        td[class="pattern-grid"] img{
+            width: 100% !important;
+            height: auto !important;
+        }
+        td[class="pattern-grid"] td {
+            display: block;
+            float: left;
+            width: 25%;
+        }
+    }
+    @media only screen and (max-width: 520px) {
+        td[class="grid"] td { width: 50%; }
+    }
+    @media only screen and (max-width: 350px) {
+        td[class="grid"] td { width: 100%; }
+    }
+</style>
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="pattern-grid" width="600">
+            <table cellpadding="0" cellspacing="0" width="100%">
+                <% 3.times do %>
+                <tr>
+                    <% 4.times do %>
+                    <td><img src="http://placesheen.com/300/240" alt="Charlie Sheen" width="150" style="display: block; border: 0;" /></td>
+                    <% end %>
+                </tr>
+                <% end %>
+            </table>
+        </td>
+    </tr>
+</table>

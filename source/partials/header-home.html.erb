@@ -1,0 +1,15 @@
+---
+name: Header Home
+---
+
+<header class="header home">
+	<a href="http://www.responsiveemailpatterns.com">
+		<img class="logo" src="images/envelope.svg" alt="" width="90" />
+	</a>
+	<h1><%= data.page.title || "Responsive Email Patterns" %></h1>
+	<p><%= data.page.desc %></p>
+
+	<% if data.page.submit == true %>
+		<a class="button" href="submit-pattern.html">Submit A Pattern</a>
+	<% end %>
+</header>

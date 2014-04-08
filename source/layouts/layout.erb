@@ -1,44 +1,31 @@
-<!doctype html>
-<html>
-  <head>
-    <link rel="icon" type="icon" href="favicon.ico">
-    <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= data.page.title || "Responsive Email Patterns" %></title>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <title><%= data.page.title || "Responsive Email Patterns" %></title>
+        <link rel="icon" type="icon" href="images/favicon.png">
+        <%= stylesheet_link_tag "all" %>
+        <%= javascript_include_tag  "plugins/modernizr","init" %>
+    </head>
+    <body class="<%= page_classes %>">
+        
+        <%= partial "partials/header-home" %>
 
-    <%= stylesheet_link_tag "normalize", "style" %>
-  </head>
+        <section class="main">
+            <div class="wrap">
+                <%= yield %>
+            </div>
+        </section>
 
-  <body class="<%= page_classes %>">
-    <div class="wrap">
-      <%= yield %>
+        <%= partial "partials/footer" %>
 
-      <footer>
-        <nav>
-          <ul>
-            <li><a href="index.html">Responsive Email Patterns</a></li>
-            <li><a href="support.html">Pattern Support & Testing</a></li>
-            <li><a href="resources.html">Responsive Email Resources</a></li>
-            <li><a href="https://github.com/briangraves/ResponsiveEmailPatterns">Fork Me on Github</a></li>
-            <li><a href="http://www.twitter.com/briangraves">@BrianGraves</a></li>
-          </ul>
-        </nav>
-      </footer>
-    </div>
-
-    <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-38926602-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-  </body>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <%= javascript_include_tag  "all" %>
+    </body>
 </html>

@@ -1,0 +1,64 @@
+---
+title: Responsive Email Patterns
+layout: pattern
+pattern_name: "Drop Below"
+pattern_desc: "Navigation begins as a single row at the top of the layout. At a specified breakpoint, the entire nav drops from the top and moves down to a stacked layout below the main message."
+type: "navigation"
+---
+<style>
+    /* Drop Below Navigation Pattern CSS */
+    .main_cta img { max-width: 100%; }
+    @media only screen and (max-width: 500px) {
+        table[class=pattern] .main_nav {
+            display: table-footer-group;
+        }
+        table[class=pattern] .main_nav td td {
+            display: inline-block;
+            width: 50%;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        table[class=pattern] .main_cta {
+            display: table-header-group;
+        }
+        table[class=pattern] .main_cta td {
+            padding-top: 16px;
+        }
+    }
+
+</style>
+
+<table cellpadding="0" cellspacing="0" class="pattern">
+    <tr class="main_nav">
+        <td width="600">
+            <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                        <a href="#" style="text-decoration: none; color: #999999;">Nav 1</a>
+                    </td>
+                    <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                        <a href="#" style="text-decoration: none; color: #999999;">Nav 2</a>
+                    </td>
+                    <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                        <a href="#" style="text-decoration: none; color: #999999;">Nav 3</a>
+                    </td>
+                    <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                        <a href="#" style="text-decoration: none; color: #999999;">Nav 4</a>
+                    </td>
+                    <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                        <a href="#" style="text-decoration: none; color: #999999;">Nav 5</a>
+                    </td>
+                    <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                        <a href="#" style="text-decoration: none; color: #999999;">Nav 6</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr class="main_cta">
+        <td width="600">
+            <img src="http://placehold.it/600x300&text=Main+CTA" alt="" style="display: block; border: 0;" />
+        </td>
+    </tr>
+</table>

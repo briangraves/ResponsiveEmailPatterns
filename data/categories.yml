@@ -1,0 +1,95 @@
+- name: Layout
+  id: layout
+  patterns:
+    - name: "Column Drop"
+      id:   "column-drop"
+    - name: "2 Equal-Width Columns"
+      id:   "2-equal-width-columns"
+    - name: "2 Equal-Width Columns v2"
+      id:   "2-equal-width-columns-v2"
+    - name: "3 Equal-Width Columns"
+      id:   "3-equal-width-columns"
+    - name: "Shrink Wrap"
+      id:   "shrink-wrap"
+    - name: "Main Column w/ Sidebar"
+      id:   "main-column-with-sidebar"
+    - name: "Image Surround"
+      id:   "image-surround"
+    - name: "Layout Shifter"
+      id:   "layout-shifter"
+    - name: "Source Order Shift"
+      id:   "source-order-shift" 
+
+- name: Navigation
+  id: navigation
+  patterns:
+    - name: "Top Links"
+      id:   "top-links"
+    - name: "Stacked Split Links"
+      id:   "stacked-split-links"
+    - name: "Drop Below"
+      id:   "drop-below"
+    - name: "Footer Anchor"
+      id:   "footer-anchor"
+    - name: "Reduce"
+      id:   "reduce"
+    - name: "Reduce v2"
+      id:   "reduce-v2"
+    - name: "Hide Everything"
+      id:   "hide-everything"
+    - name: "Stacked Top Links"
+      id:   "stacked-top-links"
+    - name: "Stacked Top Links 4-Up"
+      id:   "stacked-top-links-4-up"
+
+- name: Lists
+  id: lists
+  patterns:
+    - name: "List w/ Thumbnails"
+      id:   "list-with-thumbnails"
+    - name: "List w/ Thumbnails v2"
+      id:   "list-with-thumbnails-v2"
+    - name: "List w/ Thumbnails & Summary Stack"
+      id:   "list-with-thumbnails-and-summary-stack"
+    - name: "List w/ Thumbnails & Summary Hide"
+      id:   "list-with-thumbnails-and-summary-hide"
+
+- name: Grid Blocks
+  id: grid-blocks
+  patterns:
+    - name: "With Title Sections"
+      id:   "with-title-sections"
+    - name: "Double Wide v1"
+      id:   "double-wide-v1"
+    - name: "Double Wide v2"
+      id:   "double-wide-v2"
+    - name: "Double Wide v3"
+      id:   "double-wide-v3"
+
+- name: Media
+  id: media
+  patterns:
+    - name: "Basic Fluid Image"
+      id:   "basic-fluid-image"
+    - name: "Image Center Crop"
+      id:   "image-center-crop"
+    - name: "Image Vertical Crop"
+      id:   "image-vertical-crop"
+    - name: "Image Right Crop"
+      id:   "image-right-crop"
+    - name: "Image Left Crop"
+      id:   "image-left-crop"
+    - name: "Description Overlay"
+      id:   "description-overlay"
+    - name: "Image Grid"
+      id:   "image-grid"
+    - name: "Fluid Video"
+      id:   "fluid-video"
+
+- name: Accordions
+  id: accordions
+  patterns:
+    - name: "Show More"
+      id:   "show-more"
+    - name: "Full to Accordion"
+      id:   "full-to-accordion"

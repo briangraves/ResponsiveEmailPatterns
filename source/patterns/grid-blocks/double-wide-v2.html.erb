@@ -1,0 +1,123 @@
+---
+title: Responsive Email Patterns
+layout: pattern
+pattern_name: "Double Wide v2"
+pattern_desc: "A grid block that reflows as appropriate as the screen size shrinks."
+---
+
+<style>
+	/* Double Wide v2 Pattern CSS */
+	@media only screen and (max-width: 599px) {
+        td[class="grid-block"] table { width: 100%; }
+        td[class="grid-block"] .spacer { display: none; }
+        td[class="grid-block"] .row { padding: 0 !important; }
+        td[class="grid-block"] .section {
+            display: block;
+            float: left;
+            height: auto;
+            padding: 60px 20px;
+            margin-bottom: 8px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        td[class="grid-block"] .section.half {
+            width: 49%;
+        }
+        td[class="grid-block"] .section.half:first-child { margin-right: 2%; }
+        td[class="grid-block"] .section.full {
+            width: 100%;
+        }
+	}
+    @media only screen and (max-width: 400px) {
+        td[class="grid-block"] .section.half {
+            width: 100%;
+        }
+        td[class="grid-block"] .section.half:first-child { margin-right: 0; }
+    }
+</style>
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="grid-block" width="600" style="padding-bottom: 8px;">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="row">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="section half" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    1
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section half" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    2
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section full" width="296" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    3
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row" style="padding-top: 8px;">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="section half" width="296" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    4
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section half" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    5
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section full" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    6
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row" style="padding-top: 8px;">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="section half" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    7
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section half" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    8
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section full" width="296" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    9
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row" style="padding-top: 8px;">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="section half" width="296" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    10
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section half" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    11
+                                </td>
+                                <td class="spacer" width="8" style="font-size: 1px;">&nbsp;</td>
+                                <td class="section full" width="144" height="144" align="center" valign="middle" style="font-family: arial,sans-serif; font-size: 14px; color: #fff; background: #808080;">
+                                    12
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

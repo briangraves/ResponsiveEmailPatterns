@@ -1,0 +1,28 @@
+.footer {
+	@include clearfix;
+	padding: 2em 0;
+	background: $color-footer;
+	a { 
+		font-size: .8em; 
+		&.brand { font-size: 1em; }
+	}
+	li {
+		margin-top: 1.5em;
+		&:first-child { margin-top: 0; }
+	}
+	@media only screen and (min-width: 46em) {
+		text-align: center;
+		li {
+			margin: 1em 1em 0 1em;
+			display: inline-block;
+			&:first-child { display: block; }
+		}
+	}
+	@media only screen and (min-width: 70em) {
+		padding: 1.5em 0;
+		li {
+			margin: 0 1.5em;
+			&:first-child { display: inline-block; }
+		}
+	}
+}

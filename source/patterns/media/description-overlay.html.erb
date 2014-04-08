@@ -1,0 +1,59 @@
+---
+title: Responsive Email Patterns
+layout: pattern
+pattern_name: "Description Overlay"
+pattern_desc: "An image with a description overlayed on top. As the screen size narrows the image scales and the text in the description container reflows."
+---
+
+<style>
+  /* Description Overlay Pattern CSS */
+   @media only screen and (max-width: 599px) {
+            table { width: 100%; }
+            td[class=container] {
+                background-size: auto 100%;
+                background-position: center top;
+                width: 100%;
+                height: auto;
+                min-height: 200px;
+                padding-top: 100px !important;
+            }
+            td[class=spacer] { display: none; height: 0;}
+        }
+</style>
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="container" background="http://www.fillmurray.com/600/300" width="600" height="300" style="background-position: center top;">
+          <!--[if gte mso 9]>
+          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:300px;">
+            <v:fill type="tile" src="http://www.fillmurray.com/600/300" color="#ff0000" />
+            <v:textbox inset="0,0,0,0">
+          <![endif]-->
+          <table cellpadding="0" cellspacing="0">
+              <tr>
+                  <td class="spacer" height="150">&nbsp;</td>
+              </tr>
+              <tr>
+                  <td class="inner-container" width="600" height="150" align="left" valign="top" style="background-color: #ccc; background: rgba(30,30,30,0.7);">
+                      <table cellpadding="0" cellspacing="0">
+                          <tr>
+                              <td align="left" style="padding: 14px 16px 10px 16px; font-family: arial,sans-serif; font-size: 16px; line-height: 22px; color: #fff;">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, nisi, quis, at, magnam magni maiores pariatur eos ullam consectetur excepturi alias sed! Debitis, iusto, minima atque reiciendis in aut eaque!
+                              </td>
+                          </tr>
+                          <tr>
+                              <td align="right" style="padding: 0 16px 14px 16px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                                  <a href="#" style="text-decoration: none; color: #fff; display: block; padding: 0 5px; width: 100px; text-align: center; line-height: 40px; background: teal;">CTA ></a>
+                              </td>
+                          </tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+          <!--[if gte mso 9]>
+            </v:textbox>
+          </v:rect>
+          <![endif]-->
+        </td>
+    </tr>
+</table>

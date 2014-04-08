@@ -1,0 +1,124 @@
+---
+title: Responsive Email Patterns
+layout: pattern
+pattern_name: "Stacked Split Links"
+pattern_desc: "Navigation begins as a single row at the top of the layout. As screen size narrows, certain items drop from the top and move down to a stacked layout below the main message."
+type: "navigation"
+---
+
+<style>
+    .main_cta img { width: 100%; height: auto !important; }
+
+    /* Stacked Split Links Navigation Pattern CSS */
+    @media only screen and (max-width: 599px) {
+        table[class=pattern] .main_nav .nav_block1,
+        table[class=pattern] .main_nav .nav_block2,
+        table[class=pattern] .main_nav .nav_block3
+        {
+            padding-left: 20px !important;
+        }
+        table[class=pattern] .main_nav .nav_block1.first {
+            padding-left: 0 !important;
+        }
+        table[class=pattern] .sub_nav a {
+            display: block;
+            width: 100%;
+            padding: 16px 0;
+            border-bottom: 1px solid #cccccc;
+            color: #333333;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        table[class=pattern] .sub_nav tr:last-child a {
+            border-bottom: 0;
+        }
+    }
+    @media only screen and (max-width: 486px) {
+        table[class=pattern] .main_nav { padding: 20px 0 !important;}
+        table[class=pattern] .main_nav .nav_block1,
+        table[class=pattern] .main_nav .nav_block2
+        {
+            font-size: 14px !important;
+        }
+        table[class=pattern] .main_nav .nav_block3, table[class=pattern] .sub_nav .sub_nav_block2 { display: none; }
+        table[class=pattern] .sub_nav td { display: table-cell !important; width: auto !important; height: auto !important; max-height: auto !important; float: none !important; }
+        table[class=pattern] .sub_nav { padding: 0 12px; }
+    }
+    @media only screen and (max-width: 346px) {
+        table[class=pattern] .main_nav .nav_block1 { font-size: 16px !important; }
+        table[class=pattern] .main_nav .nav_block2 { display: none; }
+        table[class=pattern] .sub_nav .sub_nav_block2 { display: table-row; }
+    }
+</style>
+
+<table cellpadding="0" cellspacing="0" class="pattern">
+    <tr>
+        <td class="main_nav" width="600" style="padding-top: 10px; padding-bottom: 10px;">
+            <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td class="nav_block1 first" align="center" style="font-family: arial,sans-serif; font-size: 12px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 1</a>
+                    </td>
+                    <td class="nav_block1" align="center" style="padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 2</a>
+                    </td>
+                    <td class="nav_block1" align="center" style="padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 3</a>
+                    </td>
+                    <td class="nav_block2" align="center" style="padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 4</a>
+                    </td>
+                    <td class="nav_block2" align="center" style="padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 5</a>
+                    </td>
+                    <td class="nav_block3" align="center" style="padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 6</a>
+                    </td>
+                    <td class="nav_block3" align="center" style="padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 7</a>
+                    </td>
+                    <td class="nav_block3" align="center" style="padding-left: 40px; font-family: arial,sans-serif; font-size: 12px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 8</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="main_cta" style="padding-bottom: 10px;">
+            <img src="http://placehold.it/600x300&text=Main+CTA" alt="" style="display: block; border: 0;" />
+        </td>
+    </tr>
+    <tr>
+        <td class="sub_nav">
+            <table cellpadding="0" cellspacing="0" width="100%">
+                <tr class="sub_nav_block2">
+                	<td style="display: none; width: 0; height: 0; overflow: hidden; float: left; font-size: 0;">
+                		<a href="#">Nav 4</a>
+                	</td>
+                </tr>
+                <tr class="sub_nav_block2">
+                	<td style="display: none; width: 0; height: 0; overflow: hidden; float: left; font-size: 0;">
+                		<a href="#">Nav 5</a>
+                	</td>
+                </tr>
+                <tr class="sub_nav_block3">
+                	<td style="display: none; width: 0; height: 0; overflow: hidden; float: left; font-size: 0;">
+                		<a href="#">Nav 6</a>
+                	</td>
+                </tr>
+                <tr class="sub_nav_block3">
+                	<td style="display: none; width: 0; height: 0; overflow: hidden; float: left; font-size: 0;">
+                		<a href="#">Nav 7</a>
+                	</td>
+                </tr>
+                <tr class="sub_nav_block3">
+                	<td style="display: none; width: 0; height: 0; overflow: hidden; float: left; font-size: 0;">
+                		<a href="#">Nav 8</a>
+                	</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

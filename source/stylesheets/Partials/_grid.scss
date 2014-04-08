@@ -1,0 +1,23 @@
+.grid {
+	vertical-align: top;
+	width: 100%;
+	margin-bottom: 2em;
+	&:last-child { margin-bottom: 0; }
+	ul {
+		padding: .25em 0 .5em 0;
+		li {
+			margin: .75em 0;
+			font-size: 1.1em;
+		}
+	}
+	@media only screen and (min-width: 40em) {
+		display: inline-block;
+		width: 50%;
+		padding: 0 2em;
+		&:nth-last-child(2) { margin-bottom: 0; }
+	}
+	@media only screen and (min-width: 60em) {
+		width: 33.33%;
+		&:nth-last-child(3) { margin-bottom: 0; }
+	}
+}

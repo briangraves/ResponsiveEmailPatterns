@@ -1,0 +1,95 @@
+---
+title: Responsive Email Patterns
+layout: pattern
+pattern_name: "Footer Anchor"
+pattern_desc: "Navigation begins as a single row at the top of the layout. At a specified breakpoint, the entire nav drops from the top and moves down to a stacked layout below the main message. A menu or hamburger button is added at the top of the layout that anchors to the stacked menu."
+type: "no-header"
+---
+<style>
+    .main_cta img { width: 100%; height: auto !important; }
+
+    /* Footer Anchor Navigation Pattern CSS */
+    @media only screen and (max-width: 500px) {
+        td[id="header"] {
+            padding-bottom: 10px;
+        }
+        td[class="toggle"] {
+            display: table-cell !important;
+            width: auto !important;
+            height: auto !important;
+            max-width: inherit !important;
+            max-height: inherit !important;
+            float: none !important;
+            overflow: auto !important;
+            font-size: 12px !important;
+            font-family: arial,sans-serif;
+        }
+        td[class="toggle"] a {
+            display: block;
+            padding: 10px 0;
+        }
+        tr[class="main_nav"] {
+            display: table-footer-group;
+        }
+        tr[class="main_nav"] td {
+            display: block;
+            width: 100%;
+            padding: 0 !important;
+        }
+        tr[class="main_nav"] a {
+            display: block;
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid #999;
+        }
+        tr[class=main_cta] {
+            display: table-header-group;
+        }
+    }
+</style>
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td id="header">
+            <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td class="logo" align="left"><a href="#"><img src="http://placehold.it/156x34&text=Logo" alt="" style="display: block; border: 0;" /></a></td>
+                    <td align="right" class="toggle" style="display: none; width: 0; max-height: 0; max-width: 0; height: 0; overflow: hidden; float: left; font-size: 0;">
+                        <a href="#mobile_nav">Menu</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr class="main_nav">
+        <td id="mobile_nav" width="600">
+            <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 1</a>
+                    </td>
+                    <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 2</a>
+                    </td>
+                    <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 3</a>
+                    </td>
+                    <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 4</a>
+                    </td>
+                    <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 5</a>
+                    </td>
+                    <td align="center" style="padding: 15px 20px; font-family: arial,sans-serif; font-size: 14px; font-weight: bold;">
+                    	<a href="#" style="text-decoration: none; color: #999999;">Nav 6</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr class="main_cta">
+        <td>
+            <img src="http://placehold.it/600x300&text=Main+CTA" alt="" style="display: block; border: 0;" />
+        </td>
+    </tr>
+</table>

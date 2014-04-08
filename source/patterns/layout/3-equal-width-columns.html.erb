@@ -1,0 +1,146 @@
+---
+title: Responsive Email Patterns
+layout: pattern
+pattern_name: "3 Equal Width Columns"
+pattern_desc: "A layout that starts as 3 equal width columns and ends as a single column layout, stacking columns from left to right as the screen sizes get narrower."
+---
+
+<style>
+    /* 3 equal-width columns Layout Pattern CSS */
+    @media only screen and (max-width: 599px) {
+        td[class="pattern"] table { width: 100%; }
+        td[class="pattern"] .col{
+            width: 33%;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        td[class="pattern"] .col{
+            width: 100%;
+            display: block;
+        }
+        td[class="pattern"] .col-left,
+        td[class="pattern"] .col-mid {
+            margin-bottom: 20px;
+        }
+    }
+</style>
+
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="pattern" width="600" align="center">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="col col-left" width="200" align="left" valign="top">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left" style="padding: 0 10px;">
+                                    <table cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="left" style="font-family: georgia,serif; font-size: 26px; font-weight: bold; text-transform: uppercase; color: #333;">
+                                                Column One
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;">
+                                                <strong style="font-size: 16px;">This is a headline</strong><br />
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+                                                <a href="#" style="text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;">Check It Out »</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;">
+                                                <strong style="font-size: 16px;">This is a headline</strong><br />
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+                                                <a href="#" style="text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;">Check It Out »</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;">
+                                                <strong style="font-size: 16px;">This is a headline</strong><br />
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+                                                <a href="#" style="text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;">Check It Out »</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col col-mid" width="200" align="center" valign="top">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left" style="padding: 0 10px;">
+                                    <table cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="left" style="font-family: georgia,serif; font-size: 26px; font-weight: bold; text-transform: uppercase; color: #333;">
+                                                Column Two
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;">
+                                                <strong style="font-size: 16px;">This is a headline</strong><br />
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+                                                <a href="#" style="text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;">Check It Out »</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;">
+                                                <strong style="font-size: 16px;">This is a headline</strong><br />
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+                                                <a href="#" style="text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;">Check It Out »</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;">
+                                                <strong style="font-size: 16px;">This is a headline</strong><br />
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+                                                <a href="#" style="text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;">Check It Out »</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col" width="200" align="center" valign="top">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="left" style="padding: 0 10px;">
+                                    <table cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="left" style="font-family: georgia,serif; font-size: 26px; font-weight: bold; text-transform: uppercase; color: #333;">
+                                                Column Three
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;">
+                                                <strong style="font-size: 16px;">This is a headline</strong><br />
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+                                                <a href="#" style="text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;">Check It Out »</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;">
+                                                <strong style="font-size: 16px;">This is a headline</strong><br />
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+                                                <a href="#" style="text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;">Check It Out »</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" style="font-family: arial,sans-serif; font-size: 14px; color: #666; border-bottom: 1px dotted #999; padding: 20px 0;">
+                                                <strong style="font-size: 16px;">This is a headline</strong><br />
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+                                                <a href="#" style="text-decoration: none; font-style: georgia,serif; font-weight: bold; color: #333;">Check It Out »</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

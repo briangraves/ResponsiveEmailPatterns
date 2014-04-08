@@ -1,0 +1,50 @@
+.pattern-support {
+	max-width: 60em;
+	margin: 0 auto;
+	table {
+		width: 100%;
+		tr:hover td { background: whitesmoke; }
+		th { vertical-align: bottom; }
+		td { vertical-align: top; }
+		th, td {
+			width: 50%;
+			padding: 1em 0.5em;
+			text-align: left;
+			border-bottom: 1px solid whitesmoke;
+			&:first-child { padding-right: 2em; }
+			&:last-child { text-align: right; }
+		}
+		.support-level {
+				position: relative;
+				padding-right: 2.75em;
+				&:after {
+					display: block;
+					position: absolute;
+					top: 1em;
+					right: 0.5em;
+					width: 1.4em;
+					height: 1.4em;
+					background: url('../images/support.png') no-repeat;
+					border-radius: 1em;
+					text-align: center;
+					font-weight: bold;
+					color: #fff;
+				}
+		}
+		.support-level.full:after {
+			content: '';
+			background-color: #7ebd26;
+			background-position: -1px -1px;
+		}
+		.support-level.working:after {
+			content: '';
+			background-color: #72d0eb;
+			background-position: center center;
+		}
+		.support-level.none:after {
+			content: '';
+			background-color: $color-brand;
+			background-position: center -51px;
+		}
+	}
+}

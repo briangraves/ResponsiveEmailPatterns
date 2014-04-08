@@ -1,0 +1,83 @@
+.header {
+	@include clearfix;
+	padding: .75em 0;
+	background: $color-brand;
+	color: $color-text-header;
+	a { color: #fff; &:hover { color: #fff; }}
+	&.home {
+		padding: 3em 0;
+		text-align: center;
+
+		.logo {
+			padding-bottom: .5em;
+			display: block;
+			margin: 0 auto;
+		}
+
+		h1 { 
+			font-size: 2em; 
+			margin: .5em 0;
+		}
+		p { 
+			margin: 0;
+			font-weight: 600; 
+		}
+		p + a { margin: 2.5em 0 0 0; }
+		
+		span {
+			display: block;
+			font-size: .8em;
+			font-weight: 300;
+			color: #BEC2C7;
+			margin-top: 1em;
+		}
+		@media only screen and (min-width: 40em) {
+			padding: 3.5em 0;
+			.logo {
+				width: 9.25em;
+			}
+			h1 { font-size: 3em; }
+		}
+		@media only screen and (min-width: 60em) { font-size: 1.2em; }
+	}
+
+	&.interior {
+		a {
+			color: #fff;
+			&.logo { line-height: 2.38em; display: block;float: left; }
+			&:hover { color: #fff; }
+			&.button {
+				font-size: .9em;
+				margin: 0 0 0 1em;
+				display: inline-block;
+				float: right;
+				h1 { display: none; }
+			}
+		}
+		@media only screen and (min-width: 36em) { 
+			a {
+				&.button {
+					font-size: 1em;
+					h1 { display: inline-block; }
+				}
+			}
+		}
+		@media only screen and (min-width: 40em) { 
+			.wrap {
+				padding: 0 2em;
+			}
+		}
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			margin-top: -3px;
+		}
+		h1 {
+			font-size: 1em;
+			display: inline-block;
+			margin: 0 0 0 .5em;
+			font-weight: 600;
+		}
+	}
+}
+

@@ -1,0 +1,98 @@
+@import "normalize";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3";
+@import "compass/css3/inline-block";
+
+@import "Partials/utilities";
+@import "Partials/branding";
+@import "Partials/header";
+@import "Partials/footer";
+@import "Partials/forms";
+@import "Partials/grid";
+@import "Partials/pattern";
+@import "Partials/support";
+
+@import "prism";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: $color-text;
+	background: $color-footer;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: 300; }
+
+
+h2 {
+	border-bottom: 1px solid lighten($color-link, 40%);
+	margin: 0;
+	padding: 0 0 .25em 0;
+}
+
+a {
+	color: $color-link;
+	text-decoration: none;
+	transition: color 0.25s;
+	&:hover {
+		color: $color-brand;
+	}
+	&.brand {
+		color: $color-brand;
+		font-weight: 600;
+		&:hover { color: darken($color-brand, 10%); }
+	}
+}
+
+ul {
+	@include unset-list;
+}
+
+.wrap {
+	max-width: 60em;
+	margin: 0 auto;
+	@include clearfix;
+}
+.index, .submit-pattern {
+	.wrap {
+		max-width: 70em;
+	}
+}
+
+.main {
+	padding: 2em 0;
+	background: #fff;
+	flex: 1;
+	@media only screen and (min-width: 60em) { padding: 3em 0 4em 0; }
+
+}
+
+.header,
+.header.home,
+.main,
+.footer {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+@media only screen and (min-width: 40em) {
+	.header.home,
+	.footer,
+	.pattern-support {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	.header,
+	.main {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
