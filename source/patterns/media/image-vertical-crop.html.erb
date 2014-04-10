@@ -20,25 +20,31 @@ pattern_desc: "An image that stays it's original size and is simply cropped from
         }
         div[class="pattern"] img {
         	position: absolute;
-        	top: 0;
+        	bottom: 0;
         	left: 50%;
-        	margin-left: -300px;
+        	margin-left: -225px;
         }
     }
     @media only screen and (max-width: 599px) and (max-height: 700px) {
-        div[class="pattern"] { height: 360px !important; }
-        div[class="pattern"] img { top: -26px; }
+        div[class="pattern"] { height: 560px !important; }
+        div[class="pattern"] img { bottom: -26px; }
     }
     @media only screen and (max-width: 599px) and (max-height: 600px) {
-        div[class="pattern"] { height: 260px !important; }
-        div[class="pattern"] img { top: -26px; }
+        div[class="pattern"] { height: 460px !important; }
+        div[class="pattern"] img { bottom: -26px; }
     }
     @media only screen and (max-width: 599px) and (max-height: 500px) {
-        div[class="pattern"] { height: 200px !important; }
-        div[class="pattern"] img { top: -20px; }
+        div[class="pattern"] { height: 360px !important; }
+        div[class="pattern"] img { bottom: -40px; }
     }
 </style>
 
-<div class="pattern" style="height: 450px;">
-	<img src="michael-jordan.jpg" alt="Michael Jordan" width="600" height="450" style="display: block; border: 0;" />
-</div>
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="600" align="center">
+            <div class="pattern" style="height: 660px;">
+                <img src="espana_alleyway.jpg" alt="Espana" width="450" height="660" style="display: block; border: 0;" />
+            </div>
+        </td>
+    </tr>
+</table>
