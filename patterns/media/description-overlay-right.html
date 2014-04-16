@@ -54,14 +54,30 @@
 
                 <style>
   /* Description Overlay Right Pattern CSS */
+  @media only screen and (max-width: 599px) {
+        div[class="wrapper"] {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          height: 450px;
+        }
+        div[class="wrapper"] img {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          margin-left: -202px;
+        }
+    }
 </style>
 
 <table cellpadding="0" cellspacing="0" class="container" style="position: relative;">
   <tr>
-    <td class="col hero" width="405" align="left" valign="top" style="background: #fff;">
-      <img src="meat.jpg" alt="" style="display: block; border: 0;">
+    <td class="col hero" width="404" align="left" valign="top" style="background: #fff;">
+      <div class="wrapp">
+        <img src="meat.jpg" alt="" width="404" style="display: block; border: 0;">
+      </div>
     </td>
-    <td class="col" width="215" align="left" style="background-color: #ccc; background: rgba(30,30,30,0.7); position: relative;">
+    <td class="col" width="216" align="left" style="background-color: #ccc; background: rgba(30,30,30,0.7); position: relative;">
       <table cellpadding="0" cellspacing="0">
         <tr>
           <td style="padding: 20px;">
@@ -104,14 +120,30 @@
             <code class="language-markup">
                         &lt;style&gt;
   &#x2F;* Description Overlay Right Pattern CSS *&#x2F;
+  @media only screen and (max-width: 599px) {
+        div[class=&quot;wrapper&quot;] {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          height: 450px;
+        }
+        div[class=&quot;wrapper&quot;] img {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          margin-left: -202px;
+        }
+    }
 &lt;&#x2F;style&gt;
 
 &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;container&quot; style=&quot;position: relative;&quot;&gt;
   &lt;tr&gt;
-    &lt;td class=&quot;col hero&quot; width=&quot;405&quot; align=&quot;left&quot; valign=&quot;top&quot; style=&quot;background: #fff;&quot;&gt;
-      &lt;img src=&quot;meat.jpg&quot; alt=&quot;&quot; style=&quot;display: block; border: 0;&quot;&gt;
+    &lt;td class=&quot;col hero&quot; width=&quot;404&quot; align=&quot;left&quot; valign=&quot;top&quot; style=&quot;background: #fff;&quot;&gt;
+      &lt;div class=&quot;wrapp&quot;&gt;
+        &lt;img src=&quot;meat.jpg&quot; alt=&quot;&quot; width=&quot;404&quot; style=&quot;display: block; border: 0;&quot;&gt;
+      &lt;&#x2F;div&gt;
     &lt;&#x2F;td&gt;
-    &lt;td class=&quot;col&quot; width=&quot;215&quot; align=&quot;left&quot; style=&quot;background-color: #ccc; background: rgba(30,30,30,0.7); position: relative;&quot;&gt;
+    &lt;td class=&quot;col&quot; width=&quot;216&quot; align=&quot;left&quot; style=&quot;background-color: #ccc; background: rgba(30,30,30,0.7); position: relative;&quot;&gt;
       &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
         &lt;tr&gt;
           &lt;td style=&quot;padding: 20px;&quot;&gt;
