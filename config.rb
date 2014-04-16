@@ -3,7 +3,6 @@ require 'compass-normalize'
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
-set :build_dir, 'site'
 page "patterns/*", :layout => :pattern
 
 # Build-specific configuration

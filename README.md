@@ -36,8 +36,8 @@ Based on Brad Frost's 'This is Responsive' <a href="http://bradfrost.github.com/
 <ul>
 	<li>List with Thumbnails</li>
 	<li>List with Thumbnails V2</li>
-	<li>List with Thumbnails & Summary Stack</li>
-	<li>List with Thumbnails & Summary Hide</li>
+	<li>List with Thumbnails &amp; Summary Stack</li>
+	<li>List with Thumbnails &amp; Summary Hide</li>
 </ul>
 
 ## Grid Blocks
@@ -55,7 +55,7 @@ Based on Brad Frost's 'This is Responsive' <a href="http://bradfrost.github.com/
 	<li>Image Vertical Crop</li>
 	<li>Image Right Crop</li>
 	<li>Image Left Crop</li>
-	<li>Description Overlay</li>
+	<li>Description Overlay Bottom</li>
 	<li>Image Grid</li>
 	<li>Fuid Video</li>
 </ul>
