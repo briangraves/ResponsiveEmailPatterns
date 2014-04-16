@@ -2,5 +2,6 @@
 /log/*.log
 /tmp
 .sass-cache
-
- .DS_Store
+.cache
+.bundle
+*.DS_Store

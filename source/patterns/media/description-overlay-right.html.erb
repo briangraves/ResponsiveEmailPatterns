@@ -7,14 +7,30 @@ pattern_desc: ""
 
 <style>
   /* Description Overlay Right Pattern CSS */
+  @media only screen and (max-width: 599px) {
+        div[class="wrapper"] {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          height: 450px;
+        }
+        div[class="wrapper"] img {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          margin-left: -202px;
+        }
+    }
 </style>
 
 <table cellpadding="0" cellspacing="0" class="container" style="position: relative;">
   <tr>
-    <td class="col hero" width="405" align="left" valign="top" style="background: #fff;">
-      <img src="meat.jpg" alt="" style="display: block; border: 0;">
+    <td class="col hero" width="404" align="left" valign="top" style="background: #fff;">
+      <div class="wrapp">
+        <img src="meat.jpg" alt="" width="404" style="display: block; border: 0;">
+      </div>
     </td>
-    <td class="col" width="215" align="left" style="background-color: #ccc; background: rgba(30,30,30,0.7); position: relative;">
+    <td class="col" width="216" align="left" style="background-color: #ccc; background: rgba(30,30,30,0.7); position: relative;">
       <table cellpadding="0" cellspacing="0">
         <tr>
           <td style="padding: 20px;">
