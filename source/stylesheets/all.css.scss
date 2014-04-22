@@ -61,7 +61,7 @@ ul {
 	margin: 0 auto;
 	@include clearfix;
 }
-.index, .submit-pattern {
+.index, .submit-pattern, .confirmation {
 	.wrap {
 		max-width: 70em;
 	}

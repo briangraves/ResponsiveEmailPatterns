@@ -6,7 +6,9 @@ buttons: false
 
 <div class="form">
 	<h1>Submit a Pattern</h1>
-	<form action="https://docs.google.com/forms/d/1ndVWdFXIjM-LFLxp4MdAPp60f79XbUarS_KmdDqVKkY/formResponse?embedded=true" method="POST" id="ss-form" target="_self" onsubmit="">
+	<script type="text/javascript">var submitted=false;</script>
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='confirmation.html';}"></iframe>
+	<form action="https://docs.google.com/forms/d/1ndVWdFXIjM-LFLxp4MdAPp60f79XbUarS_KmdDqVKkY/formResponse?embedded=true" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 		<fieldset>
 			<label aria-hidden="true" class="ss-q-item-label aria-todo" for="entry_1729108410">*Pattern Name</label>
 			<input type="text" name="entry.1729108410" value="" class="ss-q-short" id="entry_1729108410" dir="auto" aria-label="Pattern Name  " aria-required="true" required="" title="" placeholder="What should I call your pattern?">
